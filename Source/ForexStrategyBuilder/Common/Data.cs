@@ -69,6 +69,9 @@ namespace ForexStrategyBuilder
             ProgStats.AppStart("980834a958e961563091a670660243e7dd17d543");
             IsIntrabarData = false;
             SingleOrder = false;
+            WorkingMinutes = 0;
+            MaxDD = 100;
+            MM = 0;
 
             // Program's Major, Minor, Version and Build numbers must be <= 99.
             ProgramVersion = Application.ProductVersion;
@@ -174,6 +177,21 @@ namespace ForexStrategyBuilder
         ///     Gets or sets the strategy name with extension.
         /// </summary>
         public static string StrategyName { get; set; }
+
+        /// <summary>
+        /// Number of minutes to generate strategy, 0 - not set (default)
+        /// </summary>
+        public static int WorkingMinutes { get; set; }
+
+        /// <summary>
+        /// % lots by default
+        /// </summary>
+        public static decimal MM { get; set; }
+
+        /// <summary>
+        /// Maximum drawdown
+        /// </summary>
+        public static int MaxDD { get; set; }
 
         /// <summary>
         ///     Gets the current strategy full path.

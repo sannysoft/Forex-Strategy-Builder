@@ -473,7 +473,7 @@ namespace ForexStrategyBuilder.Dialogs
             }
 
             // Criterion Max Equity percent drawdown
-            if (chbEquityPercent.Checked && Backtester.MoneyEquityPercentDrawdown > (double) nudEquityPercent.Value)
+            if ((chbEquityPercent.Checked && Backtester.MoneyEquityPercentDrawdown > (double) nudEquityPercent.Value) || Backtester.MoneyEquityPercentDrawdown > Data.MaxDD)
             {
                 return false;
             }

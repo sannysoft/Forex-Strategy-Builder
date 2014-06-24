@@ -673,9 +673,9 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                     StrategyName = "Generated",
                     UseAccountPercentEntry = strategyBest.UseAccountPercentEntry,
                     MaxOpenLots = strategyBest.MaxOpenLots,
-                    EntryLots = strategyBest.EntryLots,
-                    AddingLots = strategyBest.AddingLots,
-                    ReducingLots = strategyBest.ReducingLots
+                    EntryLots = Data.MM>0 ? Convert.ToDouble(Data.MM) : strategyBest.EntryLots,
+                    AddingLots = Data.MM>0 ? Convert.ToDouble(Data.MM) : strategyBest.AddingLots,
+                    ReducingLots = Data.MM > 0 ? Convert.ToDouble(Data.MM) : strategyBest.ReducingLots
                 };
 
             // Entry Slot

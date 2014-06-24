@@ -393,6 +393,12 @@ namespace ForexStrategyBuilder.Dialogs.Generator
         /// </summary>
         private void LoadOptions()
         {
+            if (Data.WorkingMinutes != 0)
+            {
+                chbWorkingMinutes.Checked = true;
+                nudWorkingMinutes.Value = Data.WorkingMinutes;
+            }
+
             if (string.IsNullOrEmpty(Configs.GeneratorOptions))
                 return;
 
@@ -414,7 +420,10 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                 chbOutOfSample.Checked = bool.Parse(options[i++]);
                 nudOutOfSample.Value = int.Parse(options[i++]);
                 chbWorkingMinutes.Checked = bool.Parse(options[i++]);
-                nudWorkingMinutes.Value = int.Parse(options[i++]);
+                if (Data.WorkingMinutes > 0)                                    
+                    i++;
+                 else
+                    nudWorkingMinutes.Value = int.Parse(options[i++]);
                 chbUseDefaultIndicatorValues.Checked = bool.Parse(options[i++]);
                 chbSaveStrategySlotStatus.Checked = bool.Parse(options[i++]);
                 chbHideFsb.Checked = bool.Parse(options[i++]);

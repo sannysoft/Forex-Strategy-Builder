@@ -56,16 +56,82 @@ namespace ForexStrategyBuilder
             UpdateStatusLabel("- loading user interface...");
             SetStrategyDirWatcher();
 
+            DataPeriod p;
+            String symbol;
+            bool changeMarket = ReadCommandLineOptions(out p, out symbol);
+
+            if (changeMarket && Instruments.InstrumentList.ContainsKey(symbol))
+            {
+                SetMarket(symbol, p);
+                if (LoadInstrument(false) == 0)
+                    Calculate(true);
+            }
+
+            if (Data.AutostartGenerator)
+                ShowGenerator();
+        }
+
+        private bool ReadCommandLineOptions(out DataPeriod p, out String symbol)
+        {
+            p = Data.Period;
+            symbol = Data.Symbol;
+
+            bool changeMarket = true;
+
             foreach (string arg in Environment.GetCommandLineArgs())
                 if (arg.StartsWith("-autostartgenerator"))
                 {
-                    Data.AutostartGenerator = true;
-                    ShowGenerator();
+                    Data.AutostartGenerator = true;                    
                 }
                 else if (arg.StartsWith("-singleorder"))
                 {
                     Data.SingleOrder = true;
                 }
+                else if (arg.StartsWith("-i"))
+                {
+                    symbol = arg.Substring(2).Trim();
+                    changeMarket = true;
+                }
+                else if (arg.StartsWith("-tf"))
+                {
+                    try
+                    {
+                        p = (DataPeriod)Enum.Parse(typeof(DataPeriod), arg.Substring(3).Trim());
+                        changeMarket = true;
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                }
+                else if (arg.StartsWith("-time"))
+                {
+                    try
+                    {
+                        Data.WorkingMinutes = int.Parse(arg.Substring(5).Trim());
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                }
+                else if (arg.StartsWith("-mm"))
+                {
+                    try
+                    {
+                        Data.MM = decimal.Parse(arg.Substring(3).Trim());
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                }
+                else if (arg.StartsWith("-maxdd"))
+                {
+                    Data.MaxDD = int.Parse(arg.Substring(6).Trim());
+                }
+
+            return changeMarket;
         }
 
         private bool IsDiscardSelectedIndexChange { get; set; }
