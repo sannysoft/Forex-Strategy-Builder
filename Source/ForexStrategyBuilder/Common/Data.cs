@@ -72,6 +72,7 @@ namespace ForexStrategyBuilder
             WorkingMinutes = 0;
             MaxDD = 100;
             MM = 0;
+            AutoSave = false;
 
             // Program's Major, Minor, Version and Build numbers must be <= 99.
             ProgramVersion = Application.ProductVersion;
@@ -157,6 +158,11 @@ namespace ForexStrategyBuilder
         ///     If set to true - strategy generator will always use 1 order at a time
         /// </summary>
         public static bool SingleOrder { get; set; }
+
+        /// <summary>
+        /// Will save strategy automatically in case of autogeneration
+        /// </summary>
+        public static bool AutoSave { get; set; }
 
         /// <summary>
         ///     Gets the path to Library Dir.

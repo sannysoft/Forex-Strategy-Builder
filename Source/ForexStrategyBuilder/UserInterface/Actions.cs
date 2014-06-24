@@ -21,6 +21,7 @@ using ForexStrategyBuilder.Indicators;
 using ForexStrategyBuilder.Infrastructure.Enums;
 using ForexStrategyBuilder.Properties;
 using ForexStrategyBuilder.Utils;
+using System.Timers;
 
 namespace ForexStrategyBuilder
 {
@@ -82,6 +83,10 @@ namespace ForexStrategyBuilder
                 if (arg.StartsWith("-autostartgenerator"))
                 {
                     Data.AutostartGenerator = true;                    
+                }
+                else if (arg.StartsWith("-autosave"))
+                {
+                    Data.AutoSave = true;
                 }
                 else if (arg.StartsWith("-singleorder"))
                 {
@@ -276,6 +281,9 @@ namespace ForexStrategyBuilder
         /// </summary>
         private void ActionsFormClosing(object sender, FormClosingEventArgs e)
         {
+            if (Data.AutoSave)
+                return;
+
             DialogResult dialogResult = WhetherSaveChangedStrategy();
 
             if (dialogResult == DialogResult.Yes)
@@ -1256,6 +1264,21 @@ namespace ForexStrategyBuilder
                 // When we cancel the Generating, we return the original strategy.
                 UndoStrategy();
             }
+
+            //Automatically close program
+            if (Data.AutoSave) {
+                System.Timers.Timer timer = new System.Timers.Timer();
+                timer.Elapsed += new ElapsedEventHandler(OnCloseTimer);
+                timer.Interval = 1000;
+                timer.AutoReset = true;
+                timer.Start();
+            }        
+        }
+
+        //Closes app for AutoSave param
+        void OnCloseTimer(Object sender, ElapsedEventArgs e)
+        {
+            Environment.Exit(0);
         }
 
         /// <summary>

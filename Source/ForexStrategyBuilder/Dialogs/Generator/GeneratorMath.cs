@@ -234,6 +234,36 @@ namespace ForexStrategyBuilder.Dialogs.Generator
             progressBar.Style = ProgressBarStyle.Blocks;
 
             Cursor = Cursors.Default;
+
+            if (Data.AutoSave)
+            {
+                //Get results
+                double profit = Backtester.NetMoneyBalance - Configs.InitialAccount;
+
+                if (profit > 0)
+                {
+                    String drawdown = Backtester.MoneyEquityPercentDrawdown.ToString("F2");
+                    String filename = Data.Symbol + "_" + Data.PeriodString + "_" + (new Random().Next(0, 1000)) + ".xml";
+
+                    //Create dir
+                    string subPath = "Strategies";
+                    if (profit > 400000)
+                        subPath = "GoodStrategies";
+                    System.IO.Directory.CreateDirectory(subPath);
+
+                    //Save result to CSV
+                    System.IO.StreamWriter file = new System.IO.StreamWriter(subPath + "/results.csv", true);
+                    file.WriteLine(Data.Symbol + ";" + Data.PeriodString + ";" + Data.Strategy.EntryLots + ";" + filename + ";" + profit.ToString("F2") + ";" + drawdown);
+                    file.Close();
+
+                    //Autosave strategy                
+                    strategyBest.Save(subPath + "/" + filename);
+                }
+
+                //Exit
+                btnAccept.PerformClick();
+            }
+
         }
 
         /// <summary>
