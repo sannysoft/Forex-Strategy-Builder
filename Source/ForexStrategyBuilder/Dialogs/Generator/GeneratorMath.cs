@@ -862,6 +862,9 @@ namespace ForexStrategyBuilder.Dialogs.Generator
             if (strategyBest.PropertiesStatus == StrategySlotStatus.Locked)
                 return;
 
+            if (Data.SingleOrder)
+                Data.Strategy.SameSignalAction = SameDirSignalAction.Nothing;
+            else
             if (!chbPreserveSameDirAction.Checked)
                 Data.Strategy.SameSignalAction =
                     (SameDirSignalAction)

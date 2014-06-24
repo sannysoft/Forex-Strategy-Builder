@@ -62,6 +62,10 @@ namespace ForexStrategyBuilder
                     Data.AutostartGenerator = true;
                     ShowGenerator();
                 }
+                else if (arg.StartsWith("-singleorder"))
+                {
+                    Data.SingleOrder = true;
+                }
         }
 
         private bool IsDiscardSelectedIndexChange { get; set; }

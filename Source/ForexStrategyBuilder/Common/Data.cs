@@ -68,6 +68,7 @@ namespace ForexStrategyBuilder
             ProgStats = new ProgStats {AppLicenseType = LicenseType.Valid};
             ProgStats.AppStart("980834a958e961563091a670660243e7dd17d543");
             IsIntrabarData = false;
+            SingleOrder = false;
 
             // Program's Major, Minor, Version and Build numbers must be <= 99.
             ProgramVersion = Application.ProductVersion;
@@ -148,6 +149,11 @@ namespace ForexStrategyBuilder
         ///     Gets or sets the docs directory.
         /// </summary>
         private static string OfflineDocsDir { get; set; }
+
+        /// <summary>
+        ///     If set to true - strategy generator will always use 1 order at a time
+        /// </summary>
+        public static bool SingleOrder { get; set; }
 
         /// <summary>
         ///     Gets the path to Library Dir.
