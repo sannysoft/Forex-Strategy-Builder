@@ -133,12 +133,12 @@ namespace ForexStrategyBuilder
         /// <summary>
         ///     Gets or sets the UseAccountPercentEntry
         /// </summary>
-        public bool UseAccountPercentEntry { get { return true; } set; }
+        public bool UseAccountPercentEntry { get { return true; } set{} }
 
         /// <summary>
         ///     Gets or sets the max number of open lots to enter the market
         /// </summary>
-        public double MaxOpenLots { get { return 100; } set; }
+        public double MaxOpenLots { get { return 100; } set{} }
 
         /// <summary>
         ///     Gets or sets the Number of lots to enter the market
@@ -148,17 +148,17 @@ namespace ForexStrategyBuilder
         /// <summary>
         ///     Gets or sets the Number of lots to add to the position
         /// </summary>
-        public double AddingLots { get { return EntryLots; } set; }
+        public double AddingLots { get { return EntryLots; } set {} }
 
         /// <summary>
         ///     Gets or sets the Number of lots to reduce the position
         /// </summary>
-        public double ReducingLots { get { return EntryLots; } set; }
+        public double ReducingLots { get { return EntryLots; } set {} }
 
         /// <summary>
         ///     Gets or sets if the strategy uses Martingale Money Management.
         /// </summary>
-        public bool UseMartingale { get { return false; } set; }
+        public bool UseMartingale { get { return false; } set {} }
 
         /// <summary>
         ///     Gets or sets the Martingale multiplier
