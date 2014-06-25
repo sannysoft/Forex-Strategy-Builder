@@ -448,7 +448,8 @@ namespace ForexStrategyBuilder
             }
             catch (Exception exc)
             {
-                MessageBox.Show(exc.Message);
+                if (!Data.AutostartGenerator)
+                    MessageBox.Show(exc.Message);
             }
         }
     }

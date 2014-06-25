@@ -48,6 +48,10 @@ namespace ForexStrategyBuilder
             FormClosing += ActionsFormClosing;
             Application.Idle += ApplicationIdle;
 
+            DataPeriod p;
+            String symbol;
+            bool changeMarket = ReadCommandLineOptions(out p, out symbol);
+
             PrepareInstruments();
             LoadCustomIndicators();
             ProvideStrategy();
@@ -55,11 +59,7 @@ namespace ForexStrategyBuilder
             CheckUpdate.CheckForUpdate(Data.SystemDir, MiLiveContent, MiForex);
             ShowStartingTips();
             UpdateStatusLabel("- loading user interface...");
-            SetStrategyDirWatcher();
-
-            DataPeriod p;
-            String symbol;
-            bool changeMarket = ReadCommandLineOptions(out p, out symbol);
+            SetStrategyDirWatcher();            
 
             if (changeMarket && Instruments.InstrumentList.ContainsKey(symbol))
             {
@@ -617,14 +617,16 @@ namespace ForexStrategyBuilder
             }
             else if (loadDataResult == -1)
             {
-                MessageBox.Show(Language.T("Error in the data file!"), Language.T("Data file loading"),
+                if (!Data.AutostartGenerator)
+                    MessageBox.Show(Language.T("Error in the data file!"), Language.T("Data file loading"),
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Cursor = Cursors.Default;
                 return 1;
             }
             else
             {
-                MessageBox.Show(
+                if (!Data.AutostartGenerator)
+                    MessageBox.Show(
                     Language.T("There is no data for") + " " + symbol + " " + Data.DataPeriodToString(dataPeriod) + " " +
                     Language.T("in folder") + " " + Data.OfflineDataDir + Environment.NewLine + Environment.NewLine +
                     Language.T("Check the offline data directory path (Menu Market -> Data Directory)"),
@@ -677,7 +679,7 @@ namespace ForexStrategyBuilder
                 }
             }
 
-            if (maxConsecutiveBars > 10)
+            if (maxConsecutiveBars > 10 && !Data.AutostartGenerator)
             {
                 errorMessage += Language.T("Defective till bar number:") + " " + (maxConsecutiveBar + 1) + " - " +
                                 Data.Time[maxConsecutiveBar].ToString(CultureInfo.InvariantCulture) +
@@ -686,20 +688,20 @@ namespace ForexStrategyBuilder
                                 Language.T("You can try also \"Cut Off Bad Data\".");
             }
 
-            if (Data.Bars < 300)
+            if (Data.Bars < 300 && !Data.AutostartGenerator)
             {
                 errorMessage += Language.T("Contains less than 300 bars!") + Environment.NewLine +
                                 Language.T("Check your data file or the limits in \"Data Horizon\".");
             }
 
-            if (Data.DaysOff > 5 && Data.Period != DataPeriod.W1)
+            if (Data.DaysOff > 5 && Data.Period != DataPeriod.W1 && !Data.AutostartGenerator)
             {
                 errorMessage += Language.T("Maximum days off") + " " + Data.DaysOff + Environment.NewLine +
                                 Language.T("The data is probably incomplete!") + Environment.NewLine +
                                 Language.T("You can try also \"Cut Off Bad Data\".");
             }
 
-            if (errorMessage != "")
+            if (errorMessage != "" && !Data.AutostartGenerator)
             {
                 errorMessage = Language.T("Market") + " " + Data.Symbol + " " + Data.DataPeriodToString(Data.Period) +
                                Environment.NewLine + errorMessage;

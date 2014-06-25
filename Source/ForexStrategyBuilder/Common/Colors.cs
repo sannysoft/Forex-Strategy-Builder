@@ -236,7 +236,8 @@ namespace ForexStrategyBuilder
             }
             catch (Exception exc)
             {
-                MessageBox.Show(exc.Message, Language.T("Load a color scheme..."));
+                if (!Data.AutostartGenerator)
+                    MessageBox.Show(exc.Message, Language.T("Load a color scheme..."));
             }
         }
 

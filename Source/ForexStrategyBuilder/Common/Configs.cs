@@ -1631,7 +1631,8 @@ namespace ForexStrategyBuilder
             }
             catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show(ex.Message, "Error in the configuration file");
+                if (!Data.AutostartGenerator)
+                    System.Windows.Forms.MessageBox.Show(ex.Message, "Error in the configuration file");
             }
 
             return value;
