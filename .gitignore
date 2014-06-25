@@ -9,28 +9,15 @@ obj
 /Releases/*.exe
 /Releases/*.ini
 
-/Output/Debug/*.config
-/Output/Debug/*.pdb
-/Output/Debug/*.manifest
-/Output/Debug/*.dll
-/Output/Debug/*.exe
+/Output/Debug/*
+/Output/Release/*
 
-/Output/Release/*.config
-/Output/Release/*.pdb
-/Output/Release/*.manifest
-/Output/Release/*.dll
-/Output/Release/*.exe
+/Output/Release/User Files/*
+/Output/Release/User Files/Libraries/*
+/Output/Release/User Files/Strategies/*
+/Output/Release/User Files/System/*
 
-/Output/Release/User Files/Libraries/*.dll
-/Output/Release/User Files/Strategies/*.csv
-/Output/Release/User Files/System/config.xml
-/Output/Release/User Files/System/fsb-update.xml
-/Output/Release/User Files/System/instruments.xml
-/Output/Release/User Files/System/Libraries.xml
-
-/Output/Debug/User Files/Libraries/*.dll
-/Output/Debug/User Files/Strategies/*.csv
-/Output/Debug/User Files/System/config.xml
-/Output/Debug/User Files/System/fsb-update.xml
-/Output/Debug/User Files/System/instruments.xml
-/Output/Debug/User Files/System/Libraries.xml
+/Output/Debug/User Files/*
+/Output/Debug/User Files/Libraries/*
+/Output/Debug/User Files/Strategies/*
+/Output/Debug/User Files/System/*

@@ -73,6 +73,7 @@ namespace ForexStrategyBuilder
             MaxDD = 100;
             MM = 0;
             AutoSave = false;
+            AutoMM = false;
 
             // Program's Major, Minor, Version and Build numbers must be <= 99.
             ProgramVersion = Application.ProductVersion;
@@ -163,6 +164,11 @@ namespace ForexStrategyBuilder
         /// Will save strategy automatically in case of autogeneration
         /// </summary>
         public static bool AutoSave { get; set; }
+
+        /// <summary>
+        /// Change lots automatically
+        /// </summary>
+        public static bool AutoMM { get; set; }
 
         /// <summary>
         ///     Gets the path to Library Dir.

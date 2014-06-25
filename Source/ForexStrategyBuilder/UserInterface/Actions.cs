@@ -88,6 +88,10 @@ namespace ForexStrategyBuilder
                 {
                     Data.AutoSave = true;
                 }
+                else if (arg.StartsWith("-automm"))
+                {
+                    Data.AutoMM = true;
+                }
                 else if (arg.StartsWith("-singleorder"))
                 {
                     Data.SingleOrder = true;

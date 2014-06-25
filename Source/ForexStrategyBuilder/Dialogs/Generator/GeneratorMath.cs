@@ -521,6 +521,23 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                     // Calculates the back test.
                     bool isBetter = CalculateTheResult(false);
 
+                    // Try to change lits
+                    if (Backtester.NetMoneyBalance > 0 && Data.AutoMM)
+                    {
+                        bool isGood = false;
+                        Strategy beforeOptimization = Data.Strategy.Clone();
+                        for (double i = 0.5; i <= 10; i += 0.5)
+                        {
+                            //Try different MM
+                            Data.Strategy.EntryLots = i;
+                            isGood = CalculateTheResult(false) || isGood;
+                            isBetter = isBetter && isGood;
+                        }
+
+                        if (!isGood)
+                            Data.Strategy = beforeOptimization.Clone();
+                    }
+
                     // Initial Optimization
                     if (chbInitialOptimization.Checked)
                         PerformInitialOptimization(worker, isBetter);
