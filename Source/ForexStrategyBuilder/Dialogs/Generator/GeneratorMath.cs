@@ -174,6 +174,8 @@ namespace ForexStrategyBuilder.Dialogs.Generator
             // Get the BackgroundWorker that raised this event
             var worker = sender as BackgroundWorker;
 
+            System.Threading.Thread.Sleep(5000);
+
             // Generate a strategy
             Generating(worker, e);
         }
@@ -517,6 +519,8 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                     GeneratePermanentTP();
                     GenerateBreakEven();
                     GenerateMartingale();
+                    if (Data.AutoMM)
+                        Data.Strategy.EntryLots = random.Next(9)+1;
 
                     // Calculates the back test.
                     bool isBetter = CalculateTheResult(false);
@@ -617,7 +621,7 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                             AddStrategyToGeneratorHistory(description);
                         else
                             UpdateStrategyInGeneratorHistory(description);
-                        SetStrategyDescriptionButton();
+                        //SetStrategyDescriptionButton();
 
                         bestValue = value;
                         isBetter = true;
@@ -682,9 +686,10 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                     "<p>" +
                     message +
                     "</p>";
-
+                
                 const string caption = "Indicator Calculation Error";
                 ReportIndicatorError(text, caption);
+                
                 indicatorBlackList.Add(indicator.IndicatorName);
                 return false;
             }

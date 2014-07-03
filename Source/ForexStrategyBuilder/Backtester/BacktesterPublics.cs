@@ -450,7 +450,9 @@ namespace ForexStrategyBuilder
         /// </summary>
         public static double MoneyBalance(int bar)
         {
-            return session[bar].Summary.MoneyBalance;
+            if (session!=null && session.Length>bar)
+                return session[bar].Summary.MoneyBalance; else
+                return 0;
         }
 
         /// <summary>

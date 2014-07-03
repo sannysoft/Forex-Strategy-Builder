@@ -46,7 +46,7 @@ namespace ForexStrategyBuilder
             splashScreenId = WinApi.GetWindowId(null, "FSB Launcher");
 
             FormClosing += ActionsFormClosing;
-            Application.Idle += ApplicationIdle;
+            Application.Idle += ApplicationIdle;            
 
             DataPeriod p;
             String symbol;
@@ -54,18 +54,29 @@ namespace ForexStrategyBuilder
 
             PrepareInstruments();
             LoadCustomIndicators();
-            ProvideStrategy();
-            Calculate(false);
-            CheckUpdate.CheckForUpdate(Data.SystemDir, MiLiveContent, MiForex);
-            ShowStartingTips();
-            UpdateStatusLabel("- loading user interface...");
-            SetStrategyDirWatcher();            
 
-            if (changeMarket && Instruments.InstrumentList.ContainsKey(symbol))
+            if (!Data.AutostartGenerator)
+            {
+                ProvideStrategy();
+                Calculate(false);
+            }
+
+            if (!Data.AutostartGenerator)
+            {
+                CheckUpdate.CheckForUpdate(Data.SystemDir, MiLiveContent, MiForex);
+                ShowStartingTips();
+                UpdateStatusLabel("- loading user interface...");
+                SetStrategyDirWatcher();
+            }            
+
+            if (changeMarket && Instruments.InstrumentList.ContainsKey(symbol))            
             {
                 SetMarket(symbol, p);
                 if (LoadInstrument(false) == 0)
+                {
                     Calculate(true);
+                    PrepareScannerCompactMode();
+                }
             }
 
             if (Data.AutostartGenerator)
@@ -139,7 +150,7 @@ namespace ForexStrategyBuilder
                 {
                     Data.MaxDD = int.Parse(arg.Substring(6).Trim());
                 }
-
+            
             return changeMarket;
         }
 
@@ -173,7 +184,9 @@ namespace ForexStrategyBuilder
                 string message =
                     Language.T(
                         "Forex Strategy Builder cannot load a historical data file and is going to use integrated data!");
-                MessageBox.Show(message, Language.T("Data File Loading"), MessageBoxButtons.OK,
+                
+                if(!Data.AutostartGenerator)
+                    MessageBox.Show(message, Language.T("Data File Loading"), MessageBoxButtons.OK,
                                 MessageBoxIcon.Exclamation);
             }
         }

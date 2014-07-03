@@ -245,6 +245,8 @@ namespace ForexStrategyBuilder.Dialogs.Generator
 
             chbHideFsb.CheckedChanged += HideFSBClick;
 
+            System.Threading.Thread.Sleep(5000);
+
             if (Data.AutostartGenerator)
                 BtnGenerateClick(this, new EventArgs());
         }
@@ -1056,9 +1058,9 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                 bgWorker.CancelAsync();
                 e.Cancel = true;
                 return;
-            }
+            }            
 
-            if (DialogResult == DialogResult.Cancel && isStartegyChanged)
+            if (DialogResult == DialogResult.Cancel && isStartegyChanged && !Data.AutoSave)
             {
                 DialogResult dr = MessageBox.Show(Language.T("Do you want to accept the generated strategy?"),
                                                   Data.ProgramName, MessageBoxButtons.YesNoCancel,
@@ -1088,8 +1090,7 @@ namespace ForexStrategyBuilder.Dialogs.Generator
             if (!chbSaveStrategySlotStatus.Checked)
                 Data.Strategy = ClearStrategySlotsStatus(Data.Strategy);
 
-            ParrentForm.Visible = true;
-            Data.AutostartGenerator = false;
+            ParrentForm.Visible = true;            
         }
 
         /// <summary>

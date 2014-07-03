@@ -394,7 +394,7 @@ namespace ForexStrategyBuilder
             }
             else
             {
-                throw new Exception(Language.T("Could not determine the date format!"));
+                throw new Exception("Could not determine the date format: "+dataString);
             }
 
             return dateMatchPattern;

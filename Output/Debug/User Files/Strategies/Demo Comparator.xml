@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <strategy>
   <programName>Forex Strategy Builder</programName>
-  <programVersion>2.77.5.0</programVersion>
+  <programVersion>2.74.0.0</programVersion>
   <strategyName>Demo Comparator</strategyName>
   <instrumentSymbol>EURUSD</instrumentSymbol>
   <instrumentPeriod>1440</instrumentPeriod>
@@ -31,7 +31,7 @@ It is also possible to combine the effect of the Scanner and the Comparator by s
 </description>
   <openFilters>0</openFilters>
   <closeFilters>0</closeFilters>
-  <slot slotNumber="0" slotType="Open" slotStatus="Open">
+  <slot slotNumber="0" slotType="Open">
     <indicatorName>Pivot Points</indicatorName>
     <listParam paramNumber="0">
       <caption>Logic</caption>
@@ -52,7 +52,7 @@ It is also possible to combine the effect of the Scanner and the Comparator by s
       <value>True</value>
     </checkParam>
   </slot>
-  <slot slotNumber="1" slotType="Close" slotStatus="Open">
+  <slot slotNumber="1" slotType="Close">
     <indicatorName>Pivot Points</indicatorName>
     <listParam paramNumber="0">
       <caption>Logic</caption>
@@ -76,8 +76,8 @@ It is also possible to combine the effect of the Scanner and the Comparator by s
   <AccountBalance>997.00 USD</AccountBalance>
   <ProfitPerDay>-1.12 USD</ProfitPerDay>
   <WinLossRatio>0.58</WinLossRatio>
-  <AccountStatsParam>Intrabar scanning;Interpolation method;Ambiguous bars;Profit per day;Sharpe ratio;Tested bars;Initial account;Account balance;Minimum account;Maximum account;Maximum drawdown;Max equity drawdown;Max equity drawdown;Gross profit;Gross loss;Sent orders;Executed orders;Traded lots;Winning trades;Losing trades;Win/loss ratio;Time in position;Charged spread;Charged rollover;Charged commission;Charged slippage;Total charges;Balance without charges;Account exchange rate</AccountStatsParam>
-  <AccountStatsValue>Not accomplished;Pessimistic;14;-1.12 USD;-0.04;5714;10000.00 USD;997.00 USD;997.00 USD;10875.00 USD;9878.00 USD;10638.00 USD;91.43 %;25903.00 USD;-34906.00 USD;872;144;144.00;42;30;0.58;3 %;1440.00 USD;482.00 USD;0.00 USD;0.00 USD;1922.00 USD;2919.00 USD;Not used</AccountStatsValue>
+  <AccountStatsParam>Intrabar scanning;Interpolation method;Ambiguous bars;Profit per day;Tested bars;Initial account;Account balance;Minimum account;Maximum account;Maximum drawdown;Max equity drawdown;Max equity drawdown;Gross profit;Gross loss;Sent orders;Executed orders;Traded lots;Winning trades;Losing trades;Win/loss ratio;Time in position;Charged spread;Charged rollover;Charged commission;Charged slippage;Total charges;Balance without charges;Account exchange rate</AccountStatsParam>
+  <AccountStatsValue>Not accomplished;Pessimistic;14;-1.12 USD;5714;10000.00 USD;997.00 USD;997.00 USD;10875.00 USD;9878.00 USD;10638.00 USD;91.43 %;25903.00 USD;-34906.00 USD;872;144;144.00;42;30;0.58;3 %;1440.00 USD;482.00 USD;0.00 USD;0.00 USD;1922.00 USD;2919.00 USD;Not used</AccountStatsValue>
   <MarketStatsParam>Symbol;Period;Number of bars;Date of updating;Time of updating;Date of beginning;Time of beginning;Minimum price;Maximum price;Average Gap;Maximum Gap;Average High-Low;Maximum High-Low;Average Close-Open;Maximum Close-Open;Maximum days off;Maximum data bars;No data older than;No data newer than;Fill In Data Gaps;Cut Off Bad Data</MarketStatsParam>
   <MarketStatsValue>EURUSD;1 Day;5715;10/06/11;00:00;26/06/89;00:00;0.8225;1.6038;57 pips;4780 pips;1210 pips;6119 pips;603 pips;4556 pips;4;20000;No limits;No limits;Switched off;Switched off</MarketStatsValue>
   <BalanceLine>10385;8944;8011;5147;3585;3665;4709;9286;9614;8226;8813;7354;7323;6226;5287;5908;5372;5189;2616;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997;997</BalanceLine>

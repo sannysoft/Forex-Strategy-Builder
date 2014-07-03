@@ -115,9 +115,13 @@ namespace ForexStrategyBuilder
             if (!File.Exists(sourceDataFile))
                 return 1;
 
-            var sr = new StreamReader(sourceDataFile);
+            var file = new FileStream(sourceDataFile, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            var sr = new StreamReader(file, System.Text.Encoding.ASCII);
             string sData = sr.ReadToEnd();
             sr.Close();
+
+            if (sData == null || sData == "")
+                return 1;
 
             var dp = new DataParser();
 

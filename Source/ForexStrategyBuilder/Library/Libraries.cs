@@ -59,7 +59,9 @@ namespace ForexStrategyBuilder.Library
                 return;
 
             var xmlSerializer = new XmlSerializer(typeof (LibrariesSettings));
-            using (var reader = new StreamReader(path))
+
+            var file = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            using (var reader = new StreamReader(file, System.Text.Encoding.ASCII))
             {
                 try
                 {
@@ -69,6 +71,7 @@ namespace ForexStrategyBuilder.Library
                 {
                     Console.WriteLine(e);
                 }
+                reader.Close();
             }
         }
 
