@@ -171,6 +171,11 @@ namespace ForexStrategyBuilder
         public static bool AutoMM { get; set; }
 
         /// <summary>
+        /// Automatically optimize specified strategy
+        /// </summary>
+        public static string AutoOptimize { get; set; }
+
+        /// <summary>
         ///     Gets the path to Library Dir.
         /// </summary>
         public static string LibraryDir { get; private set; }

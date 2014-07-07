@@ -523,6 +523,31 @@ namespace ForexStrategyBuilder.Dialogs.Optimizer
                 SaveReport();
 
             Cursor = Cursors.Default;
+
+            if (Data.AutoOptimize != "")
+            {
+                //Save strategy and exit
+
+                double profit = Backtester.NetMoneyBalance - Configs.InitialAccount;
+
+                String drawdown = Backtester.MoneyEquityPercentDrawdown.ToString("F2");
+                String filename = System.IO.Path.GetFileName(Data.AutoOptimize);
+
+                //Create dir
+                string subPath = "Optimized";
+                System.IO.Directory.CreateDirectory(subPath);
+
+                //Save result to CSV
+                System.IO.StreamWriter file = new System.IO.StreamWriter(subPath + "/results.csv", true);
+                file.WriteLine(Data.Symbol + ";" + Data.PeriodString + ";" + Data.Strategy.EntryLots + ";" + filename + ";" + profit.ToString("F2") + ";" + drawdown);
+                //balanceChart.
+                file.Close();
+
+                //Autosave strategy                
+                Data.Strategy.Save(subPath + "/" + filename);
+
+                Close();
+            }
         }
 
         /// <summary>

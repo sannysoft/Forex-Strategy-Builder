@@ -249,7 +249,7 @@ namespace ForexStrategyBuilder.Dialogs.Generator
 
                     //Create dir
                     string subPath = "Strategies";
-                    if (profit > 400000)
+                    if (profit > 100000)
                         subPath = "GoodStrategies";
                     System.IO.Directory.CreateDirectory(subPath);
 
@@ -520,7 +520,7 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                     GenerateBreakEven();
                     GenerateMartingale();
                     if (Data.AutoMM)
-                        Data.Strategy.EntryLots = random.Next(9)+1;
+                        Data.Strategy.EntryLots = 0.5;
 
                     // Calculates the back test.
                     bool isBetter = CalculateTheResult(false);

@@ -119,6 +119,13 @@ namespace ForexStrategyBuilder.Dialogs.Optimizer
             var height = (int) (570*Data.VDpiScale);
             Height = Math.Max(formHeight, height);
             MinimumSize = new Size(560, height);
+
+            if (Data.AutoOptimize != "")
+            {
+                SelectParameters(OptimizerButtons.SelectAll);
+                SetParamsMinMax(10);
+                BtnOptimizeClick(null, null);
+            }
         }
 
         /// <summary>
@@ -226,7 +233,10 @@ namespace ForexStrategyBuilder.Dialogs.Optimizer
 
             if (DialogResult == DialogResult.Cancel && isStartegyChanged)
             {
-                DialogResult dr = MessageBox.Show(Language.T("Do you want to accept changes to the strategy?"),
+                DialogResult dr = DialogResult.Yes;
+
+                if(Data.AutoOptimize=="")
+                    dr = MessageBox.Show(Language.T("Do you want to accept changes to the strategy?"),
                                                   Language.T("Optimizer"), MessageBoxButtons.YesNoCancel,
                                                   MessageBoxIcon.Question);
 

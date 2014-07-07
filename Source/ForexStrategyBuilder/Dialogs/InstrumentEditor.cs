@@ -423,7 +423,7 @@ namespace ForexStrategyBuilder
             NudPropSpread.Name = "NUDPropSpread";
             NudPropSpread.TextAlign = HorizontalAlignment.Center;
             NudPropSpread.Minimum = 0;
-            NudPropSpread.Maximum = 500;
+            NudPropSpread.Maximum = 5000;
             NudPropSpread.Increment = 0.01M;
             NudPropSpread.DecimalPlaces = 2;
             NudPropSpread.Value = 4;
@@ -435,8 +435,8 @@ namespace ForexStrategyBuilder
             NudPropSwapLong.Parent = PnlProperties;
             NudPropSwapLong.Name = "NUDPropSwapLong";
             NudPropSwapLong.TextAlign = HorizontalAlignment.Center;
-            NudPropSwapLong.Minimum = -500;
-            NudPropSwapLong.Maximum = 500;
+            NudPropSwapLong.Minimum = -5000;
+            NudPropSwapLong.Maximum = 5000;
             NudPropSwapLong.Increment = 0.01M;
             NudPropSwapLong.DecimalPlaces = 2;
             NudPropSwapLong.Value = 1;
@@ -450,8 +450,8 @@ namespace ForexStrategyBuilder
             NudPropSwapShort.Parent = PnlProperties;
             NudPropSwapShort.Name = "NUDPropSwapShort";
             NudPropSwapShort.TextAlign = HorizontalAlignment.Center;
-            NudPropSwapShort.Minimum = -500;
-            NudPropSwapShort.Maximum = 500;
+            NudPropSwapShort.Minimum = -5000;
+            NudPropSwapShort.Maximum = 5000;
             NudPropSwapShort.Increment = 0.01M;
             NudPropSwapShort.DecimalPlaces = 2;
             NudPropSwapShort.Value = -1;
@@ -465,8 +465,8 @@ namespace ForexStrategyBuilder
             NudPropCommission.Parent = PnlProperties;
             NudPropCommission.Name = "NUDPropCommission";
             NudPropCommission.TextAlign = HorizontalAlignment.Center;
-            NudPropCommission.Minimum = -500;
-            NudPropCommission.Maximum = 500;
+            NudPropCommission.Minimum = -5000;
+            NudPropCommission.Maximum = 5000;
             NudPropCommission.Increment = 0.01M;
             NudPropCommission.DecimalPlaces = 2;
             NudPropCommission.Value = 0;

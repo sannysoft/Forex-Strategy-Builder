@@ -61,26 +61,45 @@ namespace ForexStrategyBuilder
                 Calculate(false);
             }
 
-            if (!Data.AutostartGenerator)
+            if (!Data.AutostartGenerator && Data.AutoOptimize=="")
             {
                 CheckUpdate.CheckForUpdate(Data.SystemDir, MiLiveContent, MiForex);
                 ShowStartingTips();
                 UpdateStatusLabel("- loading user interface...");
                 SetStrategyDirWatcher();
-            }            
-
-            if (changeMarket && Instruments.InstrumentList.ContainsKey(symbol))            
-            {
-                SetMarket(symbol, p);
-                if (LoadInstrument(false) == 0)
-                {
-                    Calculate(true);
-                    PrepareScannerCompactMode();
-                }
             }
+
+            if (changeMarket)
+                if (Instruments.InstrumentList.ContainsKey(symbol))
+                {
+                    SetMarket(symbol, p);
+                    if (LoadInstrument(false) == 0)
+                    {
+                        Calculate(true);
+                        PrepareScannerCompactMode();
+                    }
+                }
+                else
+                    Application.Exit();
 
             if (Data.AutostartGenerator)
                 ShowGenerator();
+
+            if (Data.AutoOptimize != "")
+            {
+                //Load strategy and start optimizer
+                if (OpenStrategy(Data.AutoOptimize) == 0)
+                {
+                    SetMarket(Data.Strategy.Symbol, Data.Strategy.DataPeriod);
+                    if (LoadInstrument(false) == 0)
+                    {
+                        Calculate(true);
+                        PrepareScannerCompactMode();
+                        ShowOptimizer();
+                    }
+
+                }
+            }
         }
 
         private bool ReadCommandLineOptions(out DataPeriod p, out String symbol)
@@ -149,6 +168,10 @@ namespace ForexStrategyBuilder
                 else if (arg.StartsWith("-maxdd"))
                 {
                     Data.MaxDD = int.Parse(arg.Substring(6).Trim());
+                }
+                else if (arg.StartsWith("-opt"))
+                {
+                    Data.AutoOptimize = arg.Substring(4);
                 }
             
             return changeMarket;
@@ -298,7 +321,7 @@ namespace ForexStrategyBuilder
         /// </summary>
         private void ActionsFormClosing(object sender, FormClosingEventArgs e)
         {
-            if (Data.AutoSave)
+            if (Data.AutoSave || Data.AutoOptimize != "")
                 return;
 
             DialogResult dialogResult = WhetherSaveChangedStrategy();
@@ -664,7 +687,7 @@ namespace ForexStrategyBuilder
         {
             SetInstrumentDataStatusBar();
 
-            if (!Configs.CheckData)
+            if (!Configs.CheckData || Data.AutostartGenerator || Data.AutoOptimize != "")
                 return;
 
             string errorMessage = "";
@@ -1285,13 +1308,17 @@ namespace ForexStrategyBuilder
             }
 
             //Automatically close program
-            if (Data.AutoSave) {
-                System.Timers.Timer timer = new System.Timers.Timer();
-                timer.Elapsed += new ElapsedEventHandler(OnCloseTimer);
-                timer.Interval = 1000;
-                timer.AutoReset = true;
-                timer.Start();
-            }        
+            if (Data.AutoSave)
+                CloseFormWithTimer();    
+        }
+
+        private void CloseFormWithTimer()
+        {
+            System.Timers.Timer timer = new System.Timers.Timer();
+            timer.Elapsed += new ElapsedEventHandler(OnCloseTimer);
+            timer.Interval = 1000;
+            timer.AutoReset = true;
+            timer.Start();
         }
 
         //Closes app for AutoSave param
@@ -1334,6 +1361,9 @@ namespace ForexStrategyBuilder
                 // If we cancel the optimizing, we return the original strategy.
                 UndoStrategy();
             }
+
+            if (Data.AutoOptimize != "")
+                CloseFormWithTimer();
         }
 
         /// <summary>

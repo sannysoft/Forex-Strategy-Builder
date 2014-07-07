@@ -116,7 +116,7 @@ namespace ForexStrategyBuilder
             }
             catch (Exception e)
             {
-                if (!Data.AutostartGenerator)
+                if (!Data.AutostartGenerator && Data.AutoOptimize == "")
                     MessageBox.Show(e.Message, "Save Instruments");
             }
         }
