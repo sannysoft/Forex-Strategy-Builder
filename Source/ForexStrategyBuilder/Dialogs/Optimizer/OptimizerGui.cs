@@ -46,6 +46,8 @@ namespace ForexStrategyBuilder.Dialogs.Optimizer
             fontIndicator = new Font(Font.FontFamily, 11);
             colorText = LayoutColors.ColorControlText;
 
+            Text = Language.T("Optimizer") + " - " + Data.Symbol + " " + Data.PeriodString + ", " + Data.Bars + " " + Language.T("bars");
+
             // Panel Parameters Base
             pnlParamsBase.Parent = this;
             pnlParamsBase.BackColor = LayoutColors.ColorControlBack;
