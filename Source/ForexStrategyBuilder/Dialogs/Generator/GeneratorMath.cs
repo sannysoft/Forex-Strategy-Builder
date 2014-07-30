@@ -12,7 +12,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
+using System.IO;
 using System.Media;
+using System.Threading;
 using System.Windows.Forms;
 using ForexStrategyBuilder.CustomAnalytics;
 using ForexStrategyBuilder.Indicators;
@@ -89,14 +91,14 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                         for (int i = 0; i <= Data.Bars - 1; i++)
                         {
                             var bar = new CustomAnalytics.Bar
-                                {
-                                    Time = Data.Time[i],
-                                    Open = Data.Open[i],
-                                    High = Data.High[i],
-                                    Low = Data.Low[i],
-                                    Close = Data.Close[i],
-                                    Volume = Data.Volume[i]
-                                };
+                            {
+                                Time = Data.Time[i],
+                                Open = Data.Open[i],
+                                High = Data.High[i],
+                                Low = Data.Low[i],
+                                Close = Data.Close[i],
+                                Volume = Data.Volume[i]
+                            };
                             bars.Add(bar);
                         }
                         customAnalytics.Bars = bars;
@@ -174,7 +176,7 @@ namespace ForexStrategyBuilder.Dialogs.Generator
             // Get the BackgroundWorker that raised this event
             var worker = sender as BackgroundWorker;
 
-            System.Threading.Thread.Sleep(5000);
+            Thread.Sleep(5000);
 
             // Generate a strategy
             Generating(worker, e);
@@ -251,11 +253,12 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                     string subPath = "Strategies";
                     if (profit > 100000)
                         subPath = "GoodStrategies";
-                    System.IO.Directory.CreateDirectory(subPath);
+                    Directory.CreateDirectory(subPath);
 
                     //Save result to CSV
-                    System.IO.StreamWriter file = new System.IO.StreamWriter(subPath + "/results.csv", true);
-                    file.WriteLine(Data.Symbol + ";" + Data.PeriodString + ";" + Data.Strategy.EntryLots + ";" + filename + ";" + profit.ToString("F2") + ";" + drawdown);
+                    var file = new StreamWriter(subPath + "/results.csv", true);
+                    file.WriteLine(Data.Symbol + ";" + Data.PeriodString + ";" + Data.Strategy.EntryLots + ";" +
+                                   filename + ";" + profit.ToString("F2") + ";" + drawdown);
                     file.Close();
 
                     //Autosave strategy                
@@ -265,7 +268,6 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                 //Exit
                 btnAccept.PerformClick();
             }
-
         }
 
         /// <summary>
@@ -311,11 +313,11 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                 bestValue = float.MinValue;
 
             maxOpeningLogicSlots = chbMaxOpeningLogicSlots.Checked
-                                       ? (int) nudMaxOpeningLogicSlots.Value
-                                       : Strategy.MaxOpenFilters;
+                ? (int) nudMaxOpeningLogicSlots.Value
+                : Strategy.MaxOpenFilters;
             maxClosingLogicSlots = chbMaxClosingLogicSlots.Checked
-                                       ? (int) nudMaxClosingLogicSlots.Value
-                                       : Strategy.MaxCloseFilters;
+                ? (int) nudMaxClosingLogicSlots.Value
+                : Strategy.MaxCloseFilters;
         }
 
         /// <summary>
@@ -406,7 +408,7 @@ namespace ForexStrategyBuilder.Dialogs.Generator
             // Remove not generatable indicators
             foreach (string indicatorName in IndicatorManager.AllIndicatorsNames)
             {
-                var indicator = IndicatorManager.ConstructIndicator(indicatorName);
+                Indicator indicator = IndicatorManager.ConstructIndicator(indicatorName);
                 indicator.Initialize(SlotTypes.Open);
                 if (!indicator.IsGeneratable && entryIndicators.Contains(indicatorName))
                     entryIndicators.Remove(indicatorName);
@@ -686,10 +688,10 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                     "<p>" +
                     message +
                     "</p>";
-                
+
                 const string caption = "Indicator Calculation Error";
                 ReportIndicatorError(text, caption);
-                
+
                 indicatorBlackList.Add(indicator.IndicatorName);
                 return false;
             }
@@ -721,14 +723,14 @@ namespace ForexStrategyBuilder.Dialogs.Generator
 
             // Create a strategy
             Data.Strategy = new Strategy(openFilters, closeFilters)
-                {
-                    StrategyName = "Generated",
-                    UseAccountPercentEntry = strategyBest.UseAccountPercentEntry,
-                    MaxOpenLots = strategyBest.MaxOpenLots,
-                    EntryLots = Data.MM>0 ? Convert.ToDouble(Data.MM) : strategyBest.EntryLots,
-                    AddingLots = Data.MM>0 ? Convert.ToDouble(Data.MM) : strategyBest.AddingLots,
-                    ReducingLots = Data.MM > 0 ? Convert.ToDouble(Data.MM) : strategyBest.ReducingLots
-                };
+            {
+                StrategyName = "Generated",
+                UseAccountPercentEntry = strategyBest.UseAccountPercentEntry,
+                MaxOpenLots = strategyBest.MaxOpenLots,
+                EntryLots = Data.MM > 0 ? Convert.ToDouble(Data.MM) : strategyBest.EntryLots,
+                AddingLots = Data.MM > 0 ? Convert.ToDouble(Data.MM) : strategyBest.AddingLots,
+                ReducingLots = Data.MM > 0 ? Convert.ToDouble(Data.MM) : strategyBest.ReducingLots
+            };
 
             // Entry Slot
             int slot = 0;
@@ -821,8 +823,8 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                     do
                     {
                         indicatorName = Data.Strategy.CloseFilters > 0
-                                            ? exitIndicatorsWithFilters[random.Next(exitIndicatorsWithFilters.Count)]
-                                            : exitIndicators[random.Next(exitIndicators.Count)];
+                            ? exitIndicatorsWithFilters[random.Next(exitIndicatorsWithFilters.Count)]
+                            : exitIndicators[random.Next(exitIndicators.Count)];
                     } while (indicatorBlackList.Contains(indicatorName));
                     break;
                 case SlotTypes.CloseFilter:
@@ -916,16 +918,15 @@ namespace ForexStrategyBuilder.Dialogs.Generator
 
             if (Data.SingleOrder)
                 Data.Strategy.SameSignalAction = SameDirSignalAction.Nothing;
-            else
-            if (!chbPreserveSameDirAction.Checked)
+            else if (!chbPreserveSameDirAction.Checked)
                 Data.Strategy.SameSignalAction =
                     (SameDirSignalAction)
-                    Enum.GetValues(typeof (SameDirSignalAction)).GetValue(random.Next(3));
+                        Enum.GetValues(typeof (SameDirSignalAction)).GetValue(random.Next(3));
 
             if (!chbPreserveOppDirAction.Checked)
                 Data.Strategy.OppSignalAction =
                     (OppositeDirSignalAction)
-                    Enum.GetValues(typeof (OppositeDirSignalAction)).GetValue(random.Next(4));
+                        Enum.GetValues(typeof (OppositeDirSignalAction)).GetValue(random.Next(4));
 
             if (Data.Strategy.Slot[Data.Strategy.CloseSlot].IndicatorName == "Close and Reverse")
                 Data.Strategy.OppSignalAction = OppositeDirSignalAction.Reverse;
@@ -948,7 +949,7 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                 if (usePermSL && changePermSL)
                 {
                     int multiplier = Data.InstrProperties.IsFiveDigits ? 50 : 5;
-                    Data.Strategy.PermanentSL = multiplier*random.Next(5, 50);
+                    Data.Strategy.PermanentSL = multiplier*random.Next(5, 500);
                     //if (random.Next(100) > 80 &&
                     //    (Data.Strategy.SameSignalAction == SameDirSignalAction.Add   || 
                     //    Data.Strategy.SameSignalAction == SameDirSignalAction.Winner ||
@@ -974,8 +975,8 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                 Data.Strategy.PermanentTPType = PermanentProtectionType.Relative;
                 if (usePermTP && changePermTP)
                 {
-                    int multiplier = Data.InstrProperties.IsFiveDigits ? 50 : 5;
-                    Data.Strategy.PermanentTP = multiplier*random.Next(5, 50);
+                    int multiplier = Data.InstrProperties.IsFiveDigits ? 20 : 2;
+                    Data.Strategy.PermanentTP = multiplier*random.Next(1, 100);
                     //if (random.Next(100) > 80 &&
                     //    (Data.Strategy.SameSignalAction == SameDirSignalAction.Add    ||
                     //    Data.Strategy.SameSignalAction  == SameDirSignalAction.Winner ||
@@ -1047,15 +1048,15 @@ namespace ForexStrategyBuilder.Dialogs.Generator
         private List<string> GetSimpleCustomSortingOptions()
         {
             var options = new List<string>
-                {
-                    Language.T("Annualized Profit"),
-                    Language.T("Annualized Profit %"),
-                    Language.T("Average Holding Period Ret."),
-                    Language.T("Geometric Holding Period Ret."),
-                    Language.T("Profit Factor"),
-                    Language.T("Sharpe Ratio"),
-                    Language.T("Win/Loss Ratio")
-                };
+            {
+                Language.T("Annualized Profit"),
+                Language.T("Annualized Profit %"),
+                Language.T("Average Holding Period Ret."),
+                Language.T("Geometric Holding Period Ret."),
+                Language.T("Profit Factor"),
+                Language.T("Sharpe Ratio"),
+                Language.T("Win/Loss Ratio")
+            };
 
             // External Simple Sorting Options
             if (CustomAnalytics.Generator.IsAnalyticsEnabled)
@@ -1102,7 +1103,7 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                     customAnalytics.Positions = GetPositionsList();
                     // Retrieve the Custom Filter Value
                     CustomAnalytics.Generator.GetSimpleCustomSortingValue(ref customAnalytics, out value,
-                                                                          out displayName);
+                        out displayName);
                     break;
             }
         }

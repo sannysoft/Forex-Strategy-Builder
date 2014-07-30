@@ -74,6 +74,7 @@ namespace ForexStrategyBuilder
             MM = 0;
             AutoSave = false;
             AutoMM = false;
+            AutoOptimize = "";
 
             // Program's Major, Minor, Version and Build numbers must be <= 99.
             ProgramVersion = Application.ProductVersion;

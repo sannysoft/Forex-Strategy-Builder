@@ -80,7 +80,7 @@ namespace ForexStrategyBuilder
                     }
                 }
                 else
-                    Application.Exit();
+                    Application.Exit(); //TODO: Crashes the app - need to fix
 
             if (Data.AutostartGenerator)
                 ShowGenerator();
