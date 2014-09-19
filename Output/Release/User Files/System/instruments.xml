@@ -6,18 +6,18 @@
     <comment>AUDCAD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>12</spread>
+    <spread>10</spread>
     <swapType>Points</swapType>
-    <swapLong>-8</swapLong>
-    <swapShort>-92</swapShort>
+    <swapLong>-2</swapLong>
+    <swapShort>-9</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.62116193771362</commission>
+    <commission>5.08751440048218</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CAD</priceIn>
+    <rateToUSD>1.0863</rateToUSD>
+    <rateToEUR>1.4065</rateToEUR>
     <baseFileName>AUDCAD</baseFileName>
   </instrument>
   <instrument>
@@ -28,16 +28,16 @@
     <contractSize>100000</contractSize>
     <spread>12</spread>
     <swapType>Points</swapType>
-    <swapLong>-20</swapLong>
-    <swapShort>-110</swapShort>
+    <swapLong>-3.11999988555908</swapLong>
+    <swapShort>-11</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.62116193771362</commission>
+    <commission>4.34934711456299</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CHF</priceIn>
+    <rateToUSD>0.9287</rateToUSD>
+    <rateToEUR>1.2025</rateToEUR>
     <baseFileName>AUDCHF</baseFileName>
   </instrument>
   <instrument>
@@ -46,18 +46,18 @@
     <comment>AUDDKK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>133</spread>
+    <spread>58</spread>
     <swapType>Points</swapType>
-    <swapLong>-234</swapLong>
-    <swapShort>-440</swapShort>
+    <swapLong>-27.6000003814697</swapLong>
+    <swapShort>-51</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.62116193771362</commission>
+    <commission>26.8496723175049</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>DKK</priceIn>
+    <rateToUSD>5.7329</rateToUSD>
+    <rateToEUR>7.4231</rateToEUR>
     <baseFileName>AUDDKK</baseFileName>
   </instrument>
   <instrument>
@@ -65,19 +65,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>AUDJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>7</spread>
+    <contractSize>100000</contractSize>
+    <spread>8</spread>
     <swapType>Points</swapType>
-    <swapLong>-26</swapLong>
-    <swapShort>-120</swapShort>
+    <swapLong>-3.44000005722046</swapLong>
+    <swapShort>-12</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.62116193771362</commission>
+    <commission>492.35009765625</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>AUDJPY</baseFileName>
   </instrument>
   <instrument>
@@ -86,18 +86,18 @@
     <comment>AUDNZD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>19</spread>
+    <spread>12</spread>
     <swapType>Points</swapType>
-    <swapLong>47</swapLong>
-    <swapShort>-46</swapShort>
+    <swapLong>7.67999982833862</swapLong>
+    <swapShort>0</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.62116193771362</commission>
+    <commission>5.6322283744812</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>NZD</priceIn>
+    <rateToUSD>1.2026</rateToUSD>
+    <rateToEUR>1.5571</rateToEUR>
     <baseFileName>AUDNZD</baseFileName>
   </instrument>
   <instrument>
@@ -106,18 +106,18 @@
     <comment>AUDSEK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>413</spread>
+    <spread>344</spread>
     <swapType>Points</swapType>
-    <swapLong>-660</swapLong>
-    <swapShort>-1150</swapShort>
+    <swapLong>-31.7600002288818</swapLong>
+    <swapShort>-56</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.62116193771362</commission>
+    <commission>33.0251808166504</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SEK</priceIn>
+    <rateToUSD>7.0515</rateToUSD>
+    <rateToEUR>9.1305</rateToEUR>
     <baseFileName>AUDSEK</baseFileName>
   </instrument>
   <instrument>
@@ -126,18 +126,18 @@
     <comment>AUDSGD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>26</spread>
+    <spread>20</spread>
     <swapType>Points</swapType>
-    <swapLong>-31</swapLong>
-    <swapShort>-136</swapShort>
+    <swapLong>-3.75999999046326</swapLong>
+    <swapShort>-13</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.62116193771362</commission>
+    <commission>5.87472152709961</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SGD</priceIn>
+    <rateToUSD>1.2544</rateToUSD>
+    <rateToEUR>1.6242</rateToEUR>
     <baseFileName>AUDSGD</baseFileName>
   </instrument>
   <instrument>
@@ -146,18 +146,18 @@
     <comment>AUDUSD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>5</spread>
+    <spread>4</spread>
     <swapType>Points</swapType>
-    <swapLong>-21</swapLong>
-    <swapShort>-113</swapShort>
+    <swapLong>-3.11999988555908</swapLong>
+    <swapShort>-11</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.62116193771362</commission>
+    <commission>4.68341541290283</commission>
     <slippage>0</slippage>
     <priceIn>USD</priceIn>
     <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <rateToEUR>1.2948</rateToEUR>
     <baseFileName>AUDUSD</baseFileName>
   </instrument>
   <instrument>
@@ -166,18 +166,18 @@
     <comment>AUDZAR</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>511</spread>
+    <spread>356</spread>
     <swapType>Points</swapType>
-    <swapLong>1032</swapLong>
-    <swapShort>549</swapShort>
+    <swapLong>102.120002746582</swapLong>
+    <swapShort>55</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.62116193771362</commission>
+    <commission>50.0922164916992</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>ZAR</priceIn>
+    <rateToUSD>10.6957</rateToUSD>
+    <rateToEUR>13.8490</rateToEUR>
     <baseFileName>AUDZAR</baseFileName>
   </instrument>
   <instrument>
@@ -186,18 +186,18 @@
     <comment>CADCHF</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>14</spread>
+    <spread>15</spread>
     <swapType>Points</swapType>
-    <swapLong>12</swapLong>
-    <swapShort>-70</swapShort>
+    <swapLong>0</swapLong>
+    <swapShort>-5</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.52439975738525</commission>
+    <commission>4.27453088760376</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CHF</priceIn>
+    <rateToUSD>0.9287</rateToUSD>
+    <rateToEUR>1.2025</rateToEUR>
     <baseFileName>CADCHF</baseFileName>
   </instrument>
   <instrument>
@@ -206,18 +206,18 @@
     <comment>CADDKK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>144</spread>
+    <spread>84</spread>
     <swapType>Points</swapType>
-    <swapLong>-78</swapLong>
-    <swapShort>-186</swapShort>
+    <swapLong>-7.92000007629395</swapLong>
+    <swapShort>-19</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.52439975738525</commission>
+    <commission>26.387809753418</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>DKK</priceIn>
+    <rateToUSD>5.7329</rateToUSD>
+    <rateToEUR>7.4231</rateToEUR>
     <baseFileName>CADDKK</baseFileName>
   </instrument>
   <instrument>
@@ -226,18 +226,18 @@
     <comment>CADHKD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>92</spread>
+    <spread>76</spread>
     <swapType>Points</swapType>
-    <swapLong>235</swapLong>
-    <swapShort>-211</swapShort>
+    <swapLong>-11.1199998855591</swapLong>
+    <swapShort>-25</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.52439975738525</commission>
+    <commission>35.6740608215332</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>HKD</priceIn>
+    <rateToUSD>7.7504</rateToUSD>
+    <rateToEUR>10.0354</rateToEUR>
     <baseFileName>CADHKD</baseFileName>
   </instrument>
   <instrument>
@@ -245,19 +245,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>CADJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>9</spread>
+    <contractSize>100000</contractSize>
+    <spread>8</spread>
     <swapType>Points</swapType>
-    <swapLong>8</swapLong>
-    <swapShort>-70</swapShort>
+    <swapLong>-0.239999994635582</swapLong>
+    <swapShort>-6</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.52439975738525</commission>
+    <commission>483.880798339844</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>CADJPY</baseFileName>
   </instrument>
   <instrument>
@@ -266,18 +266,18 @@
     <comment>CADMXN</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>675</spread>
+    <spread>787</spread>
     <swapType>Points</swapType>
-    <swapLong>1254</swapLong>
-    <swapShort>556</swapShort>
+    <swapLong>130.679992675781</swapLong>
+    <swapShort>15</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.52439975738525</commission>
+    <commission>60.298511505127</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>MXN</priceIn>
+    <rateToUSD>13.1003</rateToUSD>
+    <rateToEUR>16.9625</rateToEUR>
     <baseFileName>CADMXN</baseFileName>
   </instrument>
   <instrument>
@@ -286,18 +286,18 @@
     <comment>CADNOK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>306</spread>
+    <spread>415</spread>
     <swapType>Points</swapType>
-    <swapLong>146</swapLong>
-    <swapShort>45</swapShort>
+    <swapLong>10.5600004196167</swapLong>
+    <swapShort>3</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.52439975738525</commission>
+    <commission>28.7777214050293</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>NOK</priceIn>
+    <rateToUSD>6.2522</rateToUSD>
+    <rateToEUR>8.0954</rateToEUR>
     <baseFileName>CADNOK</baseFileName>
   </instrument>
   <instrument>
@@ -306,18 +306,18 @@
     <comment>CADSEK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>420</spread>
+    <spread>391</spread>
     <swapType>Points</swapType>
-    <swapLong>37</swapLong>
-    <swapShort>-100</swapShort>
+    <swapLong>-7.51999998092651</swapLong>
+    <swapShort>-17</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.52439975738525</commission>
+    <commission>32.457088470459</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SEK</priceIn>
+    <rateToUSD>7.0515</rateToUSD>
+    <rateToEUR>9.1305</rateToEUR>
     <baseFileName>CADSEK</baseFileName>
   </instrument>
   <instrument>
@@ -326,18 +326,18 @@
     <comment>CADSGD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>34</spread>
+    <spread>21</spread>
     <swapType>Points</swapType>
-    <swapLong>-3</swapLong>
-    <swapShort>-60</swapShort>
+    <swapLong>1.08000004291534</swapLong>
+    <swapShort>-6</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.52439975738525</commission>
+    <commission>5.77366590499878</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SGD</priceIn>
+    <rateToUSD>1.2544</rateToUSD>
+    <rateToEUR>1.6242</rateToEUR>
     <baseFileName>CADSGD</baseFileName>
   </instrument>
   <instrument>
@@ -346,18 +346,18 @@
     <comment>CHFHUF</comment>
     <digits>3</digits>
     <contractSize>100000</contractSize>
-    <spread>271</spread>
+    <spread>268</spread>
     <swapType>Points</swapType>
-    <swapLong>365</swapLong>
-    <swapShort>-36</swapShort>
+    <swapLong>20.6399993896484</swapLong>
+    <swapShort>9</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5.6444239616394</commission>
+    <commission>1299.74536132813</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>HUF</priceIn>
+    <rateToUSD>241.4069</rateToUSD>
+    <rateToEUR>312.5789</rateToEUR>
     <baseFileName>CHFHUF</baseFileName>
   </instrument>
   <instrument>
@@ -365,19 +365,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>CHFJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>9</spread>
+    <contractSize>100000</contractSize>
+    <spread>11</spread>
     <swapType>Points</swapType>
-    <swapLong>44</swapLong>
-    <swapShort>-36</swapShort>
+    <swapLong>2.75999999046326</swapLong>
+    <swapShort>-3</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5.6444239616394</commission>
+    <commission>566.004638671875</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>CHFJPY</baseFileName>
   </instrument>
   <instrument>
@@ -386,18 +386,18 @@
     <comment>CHFNOK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>404</spread>
+    <spread>505</spread>
     <swapType>Points</swapType>
-    <swapLong>488</swapLong>
-    <swapShort>164</swapShort>
+    <swapLong>43.6399993896484</swapLong>
+    <swapShort>14</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5.6444239616394</commission>
+    <commission>33.6618499755859</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>NOK</priceIn>
+    <rateToUSD>6.2522</rateToUSD>
+    <rateToEUR>8.0954</rateToEUR>
     <baseFileName>CHFNOK</baseFileName>
   </instrument>
   <instrument>
@@ -406,18 +406,18 @@
     <comment>CHFPLN</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>244</spread>
+    <spread>186</spread>
     <swapType>Points</swapType>
-    <swapLong>409</swapLong>
-    <swapShort>132</swapShort>
+    <swapLong>40.7900009155273</swapLong>
+    <swapShort>8</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5.6444239616394</commission>
+    <commission>17.3912258148193</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>PLN</priceIn>
+    <rateToUSD>3.2301</rateToUSD>
+    <rateToEUR>4.1825</rateToEUR>
     <baseFileName>CHFPLN</baseFileName>
   </instrument>
   <instrument>
@@ -426,18 +426,18 @@
     <comment>CHFSEK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>440</spread>
+    <spread>475</spread>
     <swapType>Points</swapType>
-    <swapLong>253</swapLong>
-    <swapShort>112</swapShort>
+    <swapLong>10.5600004196167</swapLong>
+    <swapShort>2</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5.6444239616394</commission>
+    <commission>37.9656753540039</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SEK</priceIn>
+    <rateToUSD>7.0515</rateToUSD>
+    <rateToEUR>9.1305</rateToEUR>
     <baseFileName>CHFSEK</baseFileName>
   </instrument>
   <instrument>
@@ -446,18 +446,18 @@
     <comment>CHFSGD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>39</spread>
+    <spread>27</spread>
     <swapType>Points</swapType>
-    <swapLong>55</swapLong>
-    <swapShort>-10</swapShort>
+    <swapLong>5.15999984741211</swapLong>
+    <swapShort>-3</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5.6444239616394</commission>
+    <commission>6.75356674194336</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SGD</priceIn>
+    <rateToUSD>1.2544</rateToUSD>
+    <rateToEUR>1.6242</rateToEUR>
     <baseFileName>CHFSGD</baseFileName>
   </instrument>
   <instrument>
@@ -466,18 +466,18 @@
     <comment>CHFZAR</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>757</spread>
+    <spread>663</spread>
     <swapType>Points</swapType>
-    <swapLong>2372</swapLong>
-    <swapShort>1489</swapShort>
+    <swapLong>225.119995117188</swapLong>
+    <swapShort>136</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5.6444239616394</commission>
+    <commission>57.5859031677246</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>ZAR</priceIn>
+    <rateToUSD>10.6957</rateToUSD>
+    <rateToEUR>13.8490</rateToEUR>
     <baseFileName>CHFZAR</baseFileName>
   </instrument>
   <instrument>
@@ -485,19 +485,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>CZKJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>645</spread>
+    <contractSize>100000</contractSize>
+    <spread>1882</spread>
     <swapType>Points</swapType>
-    <swapLong>1</swapLong>
-    <swapShort>-1</swapShort>
+    <swapLong>0.109999999403954</swapLong>
+    <swapShort>0</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>0.250915467739105</commission>
+    <commission>24.6864242553711</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>CZKJPY</baseFileName>
   </instrument>
   <instrument>
@@ -506,18 +506,18 @@
     <comment>DKKNOK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>82</spread>
+    <spread>85</spread>
     <swapType>Points</swapType>
-    <swapLong>102</swapLong>
-    <swapShort>23</swapShort>
+    <swapLong>7.55999994277954</swapLong>
+    <swapShort>1</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>0.921542644500732</commission>
+    <commission>5.45284366607666</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>NOK</priceIn>
+    <rateToUSD>6.2522</rateToUSD>
+    <rateToEUR>8.0954</rateToEUR>
     <baseFileName>DKKNOK</baseFileName>
   </instrument>
   <instrument>
@@ -526,18 +526,18 @@
     <comment>DKKSEK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>72</spread>
+    <spread>84</spread>
     <swapType>Points</swapType>
-    <swapLong>56</swapLong>
-    <swapShort>0</swapShort>
+    <swapLong>3.72000002861023</swapLong>
+    <swapShort>-2</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>0.921542644500732</commission>
+    <commission>6.15001583099365</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SEK</priceIn>
+    <rateToUSD>7.0515</rateToUSD>
+    <rateToEUR>9.1305</rateToEUR>
     <baseFileName>DKKSEK</baseFileName>
   </instrument>
   <instrument>
@@ -548,16 +548,16 @@
     <contractSize>100000</contractSize>
     <spread>10</spread>
     <swapType>Points</swapType>
-    <swapLong>166</swapLong>
-    <swapShort>47</swapShort>
+    <swapLong>18</swapLong>
+    <swapShort>5</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>6.91173982620239</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>AUD</priceIn>
+    <rateToUSD>1.0676</rateToUSD>
+    <rateToEUR>1.3823</rateToEUR>
     <baseFileName>EURAUD</baseFileName>
   </instrument>
   <instrument>
@@ -566,18 +566,18 @@
     <comment>EURCAD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>13</spread>
+    <spread>12</spread>
     <swapType>Points</swapType>
-    <swapLong>82</swapLong>
-    <swapShort>2</swapShort>
+    <swapLong>9</swapLong>
+    <swapShort>1</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>7.03271484375</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CAD</priceIn>
+    <rateToUSD>1.0863</rateToUSD>
+    <rateToEUR>1.4065</rateToEUR>
     <baseFileName>EURCAD</baseFileName>
   </instrument>
   <instrument>
@@ -586,39 +586,19 @@
     <comment>EURCHF</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>9</spread>
+    <spread>6</spread>
     <swapType>Points</swapType>
-    <swapLong>30</swapLong>
-    <swapShort>-53</swapShort>
+    <swapLong>3.11999988555908</swapLong>
+    <swapShort>-3</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>6.01231098175049</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CHF</priceIn>
+    <rateToUSD>0.9287</rateToUSD>
+    <rateToEUR>1.2025</rateToEUR>
     <baseFileName>EURCHF</baseFileName>
-  </instrument>
-  <instrument>
-    <symbol>EURCNH</symbol>
-    <instrumentType>Forex</instrumentType>
-    <comment>EURCNH</comment>
-    <digits>5</digits>
-    <contractSize>100000</contractSize>
-    <spread>233</spread>
-    <swapType>Points</swapType>
-    <swapLong>353</swapLong>
-    <swapShort>99</swapShort>
-    <commissionType>Money</commissionType>
-    <commissionScope>lot</commissionScope>
-    <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
-    <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
-    <baseFileName>EURCNH</baseFileName>
   </instrument>
   <instrument>
     <symbol>EURCZK</symbol>
@@ -626,18 +606,18 @@
     <comment>EURCZK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>1792</spread>
+    <spread>4392</spread>
     <swapType>Points</swapType>
-    <swapLong>31</swapLong>
-    <swapShort>-82</swapShort>
+    <swapLong>7.94000005722046</swapLong>
+    <swapShort>-10</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>137.848876953125</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CZK</priceIn>
+    <rateToUSD>21.2923</rateToUSD>
+    <rateToEUR>27.5698</rateToEUR>
     <baseFileName>EURCZK</baseFileName>
   </instrument>
   <instrument>
@@ -646,18 +626,18 @@
     <comment>EURDKK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>19</spread>
+    <spread>18</spread>
     <swapType>Points</swapType>
-    <swapLong>134</swapLong>
-    <swapShort>-268</swapShort>
+    <swapLong>16.9200000762939</swapLong>
+    <swapShort>-18</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>37.1155891418457</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>DKK</priceIn>
+    <rateToUSD>5.7329</rateToUSD>
+    <rateToEUR>7.4231</rateToEUR>
     <baseFileName>EURDKK</baseFileName>
   </instrument>
   <instrument>
@@ -666,18 +646,18 @@
     <comment>EURGBP</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>5</spread>
+    <spread>6</spread>
     <swapType>Points</swapType>
-    <swapLong>47</swapLong>
-    <swapShort>-13</swapShort>
+    <swapLong>3.96000003814697</swapLong>
+    <swapShort>-1</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>3.95422410964966</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>GBP</priceIn>
+    <rateToUSD>0.6108</rateToUSD>
+    <rateToEUR>0.7908</rateToEUR>
     <baseFileName>EURGBP</baseFileName>
   </instrument>
   <instrument>
@@ -686,18 +666,18 @@
     <comment>EURHKD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>48</spread>
+    <spread>28</spread>
     <swapType>Points</swapType>
-    <swapLong>278</swapLong>
-    <swapShort>-313</swapShort>
+    <swapLong>48.4799995422363</swapLong>
+    <swapShort>-33</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>50.1771011352539</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>HKD</priceIn>
+    <rateToUSD>7.7504</rateToUSD>
+    <rateToEUR>10.0354</rateToEUR>
     <baseFileName>EURHKD</baseFileName>
   </instrument>
   <instrument>
@@ -706,18 +686,18 @@
     <comment>EURHUF</comment>
     <digits>3</digits>
     <contractSize>100000</contractSize>
-    <spread>250</spread>
+    <spread>260</spread>
     <swapType>Points</swapType>
-    <swapLong>361</swapLong>
-    <swapShort>-10</swapShort>
+    <swapLong>42.689998626709</swapLong>
+    <swapShort>6</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>1562.89465332031</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>HUF</priceIn>
+    <rateToUSD>241.4069</rateToUSD>
+    <rateToEUR>312.5789</rateToEUR>
     <baseFileName>EURHUF</baseFileName>
   </instrument>
   <instrument>
@@ -725,19 +705,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>EURJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>7</spread>
+    <contractSize>100000</contractSize>
+    <spread>4</spread>
     <swapType>Points</swapType>
-    <swapLong>31</swapLong>
-    <swapShort>-50</swapShort>
+    <swapLong>3.59999990463257</swapLong>
+    <swapShort>-3</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>680.599182128906</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>EURJPY</baseFileName>
   </instrument>
   <instrument>
@@ -746,18 +726,18 @@
     <comment>EURMXN</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>468</spread>
+    <spread>652</spread>
     <swapType>Points</swapType>
-    <swapLong>2652</swapLong>
-    <swapShort>811</swapShort>
+    <swapLong>276.959991455078</swapLong>
+    <swapShort>50</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>84.8124542236328</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>MXN</priceIn>
+    <rateToUSD>13.1003</rateToUSD>
+    <rateToEUR>16.9625</rateToEUR>
     <baseFileName>EURMXN</baseFileName>
   </instrument>
   <instrument>
@@ -766,18 +746,18 @@
     <comment>EURNOK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>189</spread>
+    <spread>429</spread>
     <swapType>Points</swapType>
-    <swapLong>617</swapLong>
-    <swapShort>105</swapShort>
+    <swapLong>65.6399993896484</swapLong>
+    <swapShort>13</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>40.4771041870117</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>NOK</priceIn>
+    <rateToUSD>6.2522</rateToUSD>
+    <rateToEUR>8.0954</rateToEUR>
     <baseFileName>EURNOK</baseFileName>
   </instrument>
   <instrument>
@@ -786,18 +766,18 @@
     <comment>EURNZD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>26</spread>
+    <spread>22</spread>
     <swapType>Points</swapType>
-    <swapLong>210</swapLong>
-    <swapShort>42</swapShort>
+    <swapLong>26.3400001525879</swapLong>
+    <swapShort>9</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>7.78569936752319</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>NZD</priceIn>
+    <rateToUSD>1.2026</rateToUSD>
+    <rateToEUR>1.5571</rateToEUR>
     <baseFileName>EURNZD</baseFileName>
   </instrument>
   <instrument>
@@ -806,18 +786,18 @@
     <comment>EURPLN</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>167</spread>
+    <spread>275</spread>
     <swapType>Points</swapType>
-    <swapLong>444</swapLong>
-    <swapShort>106</swapShort>
+    <swapLong>49.6800003051758</swapLong>
+    <swapShort>12</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>20.9122924804688</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>PLN</priceIn>
+    <rateToUSD>3.2301</rateToUSD>
+    <rateToEUR>4.1825</rateToEUR>
     <baseFileName>EURPLN</baseFileName>
   </instrument>
   <instrument>
@@ -826,18 +806,18 @@
     <comment>EURRUB</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>5508</spread>
+    <spread>4922</spread>
     <swapType>Points</swapType>
-    <swapLong>13824</swapLong>
-    <swapShort>8224</swapShort>
+    <swapLong>1214.40002441406</swapLong>
+    <swapShort>742</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>239.501586914063</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>RUB</priceIn>
+    <rateToUSD>36.9938</rateToUSD>
+    <rateToEUR>47.9003</rateToEUR>
     <baseFileName>EURRUB</baseFileName>
   </instrument>
   <instrument>
@@ -846,18 +826,18 @@
     <comment>EURSEK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>181</spread>
+    <spread>301</spread>
     <swapType>Points</swapType>
-    <swapLong>449</swapLong>
-    <swapShort>-25</swapShort>
+    <swapLong>33.1199989318848</swapLong>
+    <swapShort>-12</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>45.6522941589355</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SEK</priceIn>
+    <rateToUSD>7.0515</rateToUSD>
+    <rateToEUR>9.1305</rateToEUR>
     <baseFileName>EURSEK</baseFileName>
   </instrument>
   <instrument>
@@ -866,18 +846,18 @@
     <comment>EURSGD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>25</spread>
+    <spread>18</spread>
     <swapType>Points</swapType>
-    <swapLong>55</swapLong>
-    <swapShort>-50</swapShort>
+    <swapLong>7.80000019073486</swapLong>
+    <swapShort>-3</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>8.12090873718262</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SGD</priceIn>
+    <rateToUSD>1.2544</rateToUSD>
+    <rateToEUR>1.6242</rateToEUR>
     <baseFileName>EURSGD</baseFileName>
   </instrument>
   <instrument>
@@ -886,18 +866,18 @@
     <comment>EURTRY</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>98</spread>
+    <spread>109</spread>
     <swapType>Points</swapType>
-    <swapLong>1613</swapLong>
-    <swapShort>462</swapShort>
+    <swapLong>116.76000213623</swapLong>
+    <swapShort>30</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>13.9904794692993</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>TRY</priceIn>
+    <rateToUSD>2.1610</rateToUSD>
+    <rateToEUR>2.7981</rateToEUR>
     <baseFileName>EURTRY</baseFileName>
   </instrument>
   <instrument>
@@ -908,16 +888,16 @@
     <contractSize>100000</contractSize>
     <spread>4</spread>
     <swapType>Points</swapType>
-    <swapLong>38</swapLong>
-    <swapShort>-42</swapShort>
+    <swapLong>4.07999992370605</swapLong>
+    <swapShort>-2</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>6.47410917282104</commission>
     <slippage>0</slippage>
     <priceIn>USD</priceIn>
     <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <rateToEUR>1.2948</rateToEUR>
     <baseFileName>EURUSD</baseFileName>
   </instrument>
   <instrument>
@@ -926,18 +906,18 @@
     <comment>EURZAR</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>652</spread>
+    <spread>1150</spread>
     <swapType>Points</swapType>
-    <swapLong>3233</swapLong>
-    <swapShort>1174</swapShort>
+    <swapLong>410.760009765625</swapLong>
+    <swapShort>128</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>6.87934875488281</commission>
+    <commission>69.244873046875</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>ZAR</priceIn>
+    <rateToUSD>10.6957</rateToUSD>
+    <rateToEUR>13.8490</rateToEUR>
     <baseFileName>EURZAR</baseFileName>
   </instrument>
   <instrument>
@@ -946,18 +926,18 @@
     <comment>GBPAUD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>15</spread>
+    <spread>16</spread>
     <swapType>Points</swapType>
-    <swapLong>190</swapLong>
-    <swapShort>51</swapShort>
+    <swapLong>19.5599994659424</swapLong>
+    <swapShort>5</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>8.73969173431396</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>AUD</priceIn>
+    <rateToUSD>1.0676</rateToUSD>
+    <rateToEUR>1.3823</rateToEUR>
     <baseFileName>GBPAUD</baseFileName>
   </instrument>
   <instrument>
@@ -966,18 +946,18 @@
     <comment>GBPCAD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>21</spread>
+    <spread>17</spread>
     <swapType>Points</swapType>
-    <swapLong>80</swapLong>
-    <swapShort>-16</swapShort>
+    <swapLong>7.80000019073486</swapLong>
+    <swapShort>-1</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>8.89266109466553</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CAD</priceIn>
+    <rateToUSD>1.0863</rateToUSD>
+    <rateToEUR>1.4065</rateToEUR>
     <baseFileName>GBPCAD</baseFileName>
   </instrument>
   <instrument>
@@ -986,39 +966,19 @@
     <comment>GBPCHF</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>15</spread>
+    <spread>13</spread>
     <swapType>Points</swapType>
-    <swapLong>14</swapLong>
-    <swapShort>-68</swapShort>
+    <swapLong>1.32000005245209</swapLong>
+    <swapShort>-6</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>7.60239028930664</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CHF</priceIn>
+    <rateToUSD>0.9287</rateToUSD>
+    <rateToEUR>1.2025</rateToEUR>
     <baseFileName>GBPCHF</baseFileName>
-  </instrument>
-  <instrument>
-    <symbol>GBPCNH</symbol>
-    <instrumentType>Forex</instrumentType>
-    <comment>GBPCNH</comment>
-    <digits>5</digits>
-    <contractSize>100000</contractSize>
-    <spread>238</spread>
-    <swapType>Points</swapType>
-    <swapLong>766</swapLong>
-    <swapShort>352</swapShort>
-    <commissionType>Money</commissionType>
-    <commissionScope>lot</commissionScope>
-    <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
-    <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
-    <baseFileName>GBPCNH</baseFileName>
   </instrument>
   <instrument>
     <symbol>GBPCZK</symbol>
@@ -1026,18 +986,18 @@
     <comment>GBPCZK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>3163</spread>
+    <spread>6626</spread>
     <swapType>Points</swapType>
-    <swapLong>20</swapLong>
-    <swapShort>-150</swapShort>
+    <swapLong>2.03999996185303</swapLong>
+    <swapShort>-18</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>174.305847167969</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CZK</priceIn>
+    <rateToUSD>21.2923</rateToUSD>
+    <rateToEUR>27.5698</rateToEUR>
     <baseFileName>GBPCZK</baseFileName>
   </instrument>
   <instrument>
@@ -1046,18 +1006,18 @@
     <comment>GBPDKK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>101</spread>
+    <spread>89</spread>
     <swapType>Points</swapType>
-    <swapLong>76</swapLong>
-    <swapShort>-413</swapShort>
+    <swapLong>5.88000011444092</swapLong>
+    <swapShort>-39</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>46.9315719604492</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>DKK</priceIn>
+    <rateToUSD>5.7329</rateToUSD>
+    <rateToEUR>7.4231</rateToEUR>
     <baseFileName>GBPDKK</baseFileName>
   </instrument>
   <instrument>
@@ -1066,18 +1026,18 @@
     <comment>GBPHKD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>159</spread>
+    <spread>81</spread>
     <swapType>Points</swapType>
-    <swapLong>172</swapLong>
-    <swapShort>-554</swapShort>
+    <swapLong>33.1199989318848</swapLong>
+    <swapShort>-68</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>63.4474639892578</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>HKD</priceIn>
+    <rateToUSD>7.7504</rateToUSD>
+    <rateToEUR>10.0354</rateToEUR>
     <baseFileName>GBPHKD</baseFileName>
   </instrument>
   <instrument>
@@ -1086,18 +1046,18 @@
     <comment>GBPHUF</comment>
     <digits>3</digits>
     <contractSize>100000</contractSize>
-    <spread>445</spread>
+    <spread>423</spread>
     <swapType>Points</swapType>
-    <swapLong>368</swapLong>
-    <swapShort>-20</swapShort>
+    <swapLong>34.439998626709</swapLong>
+    <swapShort>4</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>1976.23425292969</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>HUF</priceIn>
+    <rateToUSD>241.4069</rateToUSD>
+    <rateToEUR>312.5789</rateToEUR>
     <baseFileName>GBPHUF</baseFileName>
   </instrument>
   <instrument>
@@ -1105,19 +1065,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>GBPJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>11</spread>
+    <contractSize>100000</contractSize>
+    <spread>10</spread>
     <swapType>Points</swapType>
-    <swapLong>16</swapLong>
-    <swapShort>-67</swapShort>
+    <swapLong>1.91999995708466</swapLong>
+    <swapShort>-6</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>860.597595214844</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>GBPJPY</baseFileName>
   </instrument>
   <instrument>
@@ -1126,18 +1086,18 @@
     <comment>GBPMXN</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>1091</spread>
+    <spread>1099</spread>
     <swapType>Points</swapType>
-    <swapLong>3014</swapLong>
-    <swapShort>855</swapShort>
+    <swapLong>303</swapLong>
+    <swapShort>55</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>107.24284362793</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>MXN</priceIn>
+    <rateToUSD>13.1003</rateToUSD>
+    <rateToEUR>16.9625</rateToEUR>
     <baseFileName>GBPMXN</baseFileName>
   </instrument>
   <instrument>
@@ -1146,18 +1106,18 @@
     <comment>GBPNOK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>346</spread>
+    <spread>444</spread>
     <swapType>Points</swapType>
-    <swapLong>650</swapLong>
-    <swapShort>68</swapShort>
+    <swapLong>59.8800010681152</swapLong>
+    <swapShort>4</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>51.1821060180664</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>NOK</priceIn>
+    <rateToUSD>6.2522</rateToUSD>
+    <rateToEUR>8.0954</rateToEUR>
     <baseFileName>GBPNOK</baseFileName>
   </instrument>
   <instrument>
@@ -1166,18 +1126,18 @@
     <comment>GBPNZD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>34</spread>
+    <spread>28</spread>
     <swapType>Points</swapType>
-    <swapLong>212</swapLong>
-    <swapShort>53</swapShort>
+    <swapLong>28.9200000762939</swapLong>
+    <swapShort>9</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>9.84478759765625</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>NZD</priceIn>
+    <rateToUSD>1.2026</rateToUSD>
+    <rateToEUR>1.5571</rateToEUR>
     <baseFileName>GBPNZD</baseFileName>
   </instrument>
   <instrument>
@@ -1186,18 +1146,18 @@
     <comment>GBPPLN</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>299</spread>
+    <spread>517</spread>
     <swapType>Points</swapType>
-    <swapLong>493</swapLong>
-    <swapShort>108</swapShort>
+    <swapLong>53.0400009155273</swapLong>
+    <swapShort>13</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>26.4429779052734</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>PLN</priceIn>
+    <rateToUSD>3.2301</rateToUSD>
+    <rateToEUR>4.1825</rateToEUR>
     <baseFileName>GBPPLN</baseFileName>
   </instrument>
   <instrument>
@@ -1206,18 +1166,18 @@
     <comment>GBPSEK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>394</spread>
+    <spread>617</spread>
     <swapType>Points</swapType>
-    <swapLong>432</swapLong>
-    <swapShort>-118</swapShort>
+    <swapLong>18</swapLong>
+    <swapShort>-36</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>57.7259788513184</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SEK</priceIn>
+    <rateToUSD>7.0515</rateToUSD>
+    <rateToEUR>9.1305</rateToEUR>
     <baseFileName>GBPSEK</baseFileName>
   </instrument>
   <instrument>
@@ -1226,18 +1186,18 @@
     <comment>GBPSGD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>42</spread>
+    <spread>21</spread>
     <swapType>Points</swapType>
-    <swapLong>84</swapLong>
-    <swapShort>-122</swapShort>
+    <swapLong>5.15999984741211</swapLong>
+    <swapShort>-7</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>10.2686500549316</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SGD</priceIn>
+    <rateToUSD>1.2544</rateToUSD>
+    <rateToEUR>1.6242</rateToEUR>
     <baseFileName>GBPSGD</baseFileName>
   </instrument>
   <instrument>
@@ -1246,18 +1206,18 @@
     <comment>GBPTRY</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>151</spread>
+    <spread>181</spread>
     <swapType>Points</swapType>
-    <swapLong>1207</swapLong>
-    <swapShort>294</swapShort>
+    <swapLong>140.160003662109</swapLong>
+    <swapShort>34</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>17.6905479431152</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>TRY</priceIn>
+    <rateToUSD>2.1610</rateToUSD>
+    <rateToEUR>2.7981</rateToEUR>
     <baseFileName>GBPTRY</baseFileName>
   </instrument>
   <instrument>
@@ -1268,16 +1228,16 @@
     <contractSize>100000</contractSize>
     <spread>6</spread>
     <swapType>Points</swapType>
-    <swapLong>24</swapLong>
-    <swapShort>-59</swapShort>
+    <swapLong>1.79999995231628</swapLong>
+    <swapShort>-6</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>8.18632030487061</commission>
     <slippage>0</slippage>
     <priceIn>USD</priceIn>
     <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <rateToEUR>1.2948</rateToEUR>
     <baseFileName>GBPUSD</baseFileName>
   </instrument>
   <instrument>
@@ -1286,18 +1246,18 @@
     <comment>GBPZAR</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>993</spread>
+    <spread>1920</spread>
     <swapType>Points</swapType>
-    <swapLong>3410</swapLong>
-    <swapShort>1360</swapShort>
+    <swapLong>419.519989013672</swapLong>
+    <swapShort>142</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>8.31528949737549</commission>
+    <commission>87.55810546875</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>ZAR</priceIn>
+    <rateToUSD>10.6957</rateToUSD>
+    <rateToEUR>13.8490</rateToEUR>
     <baseFileName>GBPZAR</baseFileName>
   </instrument>
   <instrument>
@@ -1305,19 +1265,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>HKDJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
+    <contractSize>100000</contractSize>
     <spread>2</spread>
     <swapType>Points</swapType>
-    <swapLong>41</swapLong>
-    <swapShort>-41</swapShort>
+    <swapLong>2.51999998092651</swapLong>
+    <swapShort>-3</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>0.644494593143463</commission>
+    <commission>67.8197021484375</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>HKDJPY</baseFileName>
   </instrument>
   <instrument>
@@ -1325,19 +1285,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>MXNJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>5</spread>
+    <contractSize>100000</contractSize>
+    <spread>7</spread>
     <swapType>Points</swapType>
-    <swapLong>-4</swapLong>
-    <swapShort>-97</swapShort>
+    <swapLong>-0.0299999993294477</swapLong>
+    <swapShort>-11</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>0.382313281297684</commission>
+    <commission>40.1237754821777</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>MXNJPY</baseFileName>
   </instrument>
   <instrument>
@@ -1345,19 +1305,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>NOKJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>8</spread>
+    <contractSize>100000</contractSize>
+    <spread>11</spread>
     <swapType>Points</swapType>
-    <swapLong>32</swapLong>
-    <swapShort>-49</swapShort>
+    <swapLong>1.79999995231628</swapLong>
+    <swapShort>-3</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>0.833430826663971</commission>
+    <commission>84.0721206665039</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>NOKJPY</baseFileName>
   </instrument>
   <instrument>
@@ -1366,18 +1326,18 @@
     <comment>NOKSEK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>52</spread>
+    <spread>79</spread>
     <swapType>Points</swapType>
-    <swapLong>23</swapLong>
-    <swapShort>-72</swapShort>
+    <swapLong>-0.879999995231628</swapLong>
+    <swapShort>-7</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>0.833430826663971</commission>
+    <commission>5.63927364349365</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SEK</priceIn>
+    <rateToUSD>7.0515</rateToUSD>
+    <rateToEUR>9.1305</rateToEUR>
     <baseFileName>NOKSEK</baseFileName>
   </instrument>
   <instrument>
@@ -1386,18 +1346,18 @@
     <comment>NZDCAD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>18</spread>
+    <spread>19</spread>
     <swapType>Points</swapType>
-    <swapLong>-6</swapLong>
-    <swapShort>-92</swapShort>
+    <swapLong>-3.44000005722046</swapLong>
+    <swapShort>-12</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.3352837562561</commission>
+    <commission>4.51643133163452</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CAD</priceIn>
+    <rateToUSD>1.0863</rateToUSD>
+    <rateToEUR>1.4065</rateToEUR>
     <baseFileName>NZDCAD</baseFileName>
   </instrument>
   <instrument>
@@ -1406,18 +1366,18 @@
     <comment>NZDCHF</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>17</spread>
+    <spread>15</spread>
     <swapType>Points</swapType>
-    <swapLong>-17</swapLong>
-    <swapShort>-109</swapShort>
+    <swapLong>-4.55999994277954</swapLong>
+    <swapShort>-13</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.3352837562561</commission>
+    <commission>3.86112475395203</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CHF</priceIn>
+    <rateToUSD>0.9287</rateToUSD>
+    <rateToEUR>1.2025</rateToEUR>
     <baseFileName>NZDCHF</baseFileName>
   </instrument>
   <instrument>
@@ -1426,18 +1386,18 @@
     <comment>NZDDKK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>130</spread>
+    <spread>131</spread>
     <swapType>Points</swapType>
-    <swapLong>-187</swapLong>
-    <swapShort>-535</swapShort>
+    <swapLong>-2.75</swapLong>
+    <swapShort>-8</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.3352837562561</commission>
+    <commission>23.8357467651367</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>DKK</priceIn>
+    <rateToUSD>5.7329</rateToUSD>
+    <rateToEUR>7.4231</rateToEUR>
     <baseFileName>NZDDKK</baseFileName>
   </instrument>
   <instrument>
@@ -1445,19 +1405,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>NZDJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>12</spread>
+    <contractSize>100000</contractSize>
+    <spread>11</spread>
     <swapType>Points</swapType>
-    <swapLong>-22</swapLong>
-    <swapShort>-119</swapShort>
+    <swapLong>-4.96000003814697</swapLong>
+    <swapShort>-14</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.3352837562561</commission>
+    <commission>437.082885742188</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>NZDJPY</baseFileName>
   </instrument>
   <instrument>
@@ -1466,18 +1426,18 @@
     <comment>NZDSEK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>313</spread>
+    <spread>398</spread>
     <swapType>Points</swapType>
-    <swapLong>-147</swapLong>
-    <swapShort>-450</swapShort>
+    <swapLong>-30.6900005340576</swapLong>
+    <swapShort>-92</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.3352837562561</commission>
+    <commission>29.318042755127</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SEK</priceIn>
+    <rateToUSD>7.0515</rateToUSD>
+    <rateToEUR>9.1305</rateToEUR>
     <baseFileName>NZDSEK</baseFileName>
   </instrument>
   <instrument>
@@ -1486,18 +1446,18 @@
     <comment>NZDSGD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>31</spread>
+    <spread>20</spread>
     <swapType>Points</swapType>
-    <swapLong>-28</swapLong>
-    <swapShort>-134</swapShort>
+    <swapLong>-4.80000019073486</swapLong>
+    <swapShort>-18</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.3352837562561</commission>
+    <commission>5.21527290344238</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SGD</priceIn>
+    <rateToUSD>1.2544</rateToUSD>
+    <rateToEUR>1.6242</rateToEUR>
     <baseFileName>NZDSGD</baseFileName>
   </instrument>
   <instrument>
@@ -1506,18 +1466,18 @@
     <comment>NZDUSD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>9</spread>
+    <spread>6</spread>
     <swapType>Points</swapType>
-    <swapLong>-18</swapLong>
-    <swapShort>-154</swapShort>
+    <swapLong>-4.48000001907349</swapLong>
+    <swapShort>-13</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>4.3352837562561</commission>
+    <commission>4.15769290924072</commission>
     <slippage>0</slippage>
     <priceIn>USD</priceIn>
     <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <rateToEUR>1.2948</rateToEUR>
     <baseFileName>NZDUSD</baseFileName>
   </instrument>
   <instrument>
@@ -1525,19 +1485,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>SEKJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>6</spread>
+    <contractSize>100000</contractSize>
+    <spread>11</spread>
     <swapType>Points</swapType>
-    <swapLong>36</swapLong>
-    <swapShort>-46</swapShort>
+    <swapLong>2.51999998092651</swapLong>
+    <swapShort>-3</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>0.7708740234375</commission>
+    <commission>74.541618347168</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>SEKJPY</baseFileName>
   </instrument>
   <instrument>
@@ -1545,19 +1505,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>SGDJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>16</spread>
+    <contractSize>100000</contractSize>
+    <spread>13</spread>
     <swapType>Points</swapType>
-    <swapLong>38</swapLong>
-    <swapShort>-44</swapShort>
+    <swapLong>2.51999998092651</swapLong>
+    <swapShort>-4</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>3.9633092880249</commission>
+    <commission>419.041229248047</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>SGDJPY</baseFileName>
   </instrument>
   <instrument>
@@ -1565,19 +1525,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>TRYJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>26</spread>
+    <contractSize>100000</contractSize>
+    <spread>33</spread>
     <swapType>Points</swapType>
-    <swapLong>-85</swapLong>
-    <swapShort>-226</swapShort>
+    <swapLong>-6.30000019073486</swapLong>
+    <swapShort>-19</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>2.28404998779297</commission>
+    <commission>243.236541748047</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>TRYJPY</baseFileName>
   </instrument>
   <instrument>
@@ -1588,16 +1548,16 @@
     <contractSize>100000</contractSize>
     <spread>5</spread>
     <swapType>Points</swapType>
-    <swapLong>74</swapLong>
-    <swapShort>2</swapShort>
+    <swapLong>5.76000022888184</swapLong>
+    <swapShort>0</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>5.43141508102417</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CAD</priceIn>
+    <rateToUSD>1.0863</rateToUSD>
+    <rateToEUR>1.4065</rateToEUR>
     <baseFileName>USDCAD</baseFileName>
   </instrument>
   <instrument>
@@ -1606,18 +1566,18 @@
     <comment>USDCHF</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>6</spread>
+    <spread>4</spread>
     <swapType>Points</swapType>
-    <swapLong>32</swapLong>
-    <swapShort>-47</swapShort>
+    <swapLong>2.03999996185303</swapLong>
+    <swapShort>-3</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>4.64335012435913</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CHF</priceIn>
+    <rateToUSD>0.9287</rateToUSD>
+    <rateToEUR>1.2025</rateToEUR>
     <baseFileName>USDCHF</baseFileName>
   </instrument>
   <instrument>
@@ -1626,18 +1586,18 @@
     <comment>USDCZK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>1284</spread>
+    <spread>2812</spread>
     <swapType>Points</swapType>
-    <swapLong>37</swapLong>
-    <swapShort>-68</swapShort>
+    <swapLong>3.24000000953674</swapLong>
+    <swapShort>-21</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>106.461647033691</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>CZK</priceIn>
+    <rateToUSD>21.2923</rateToUSD>
+    <rateToEUR>27.5698</rateToEUR>
     <baseFileName>USDCZK</baseFileName>
   </instrument>
   <instrument>
@@ -1646,18 +1606,18 @@
     <comment>USDDKK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>31</spread>
+    <spread>41</spread>
     <swapType>Points</swapType>
-    <swapLong>113</swapLong>
-    <swapShort>-167</swapShort>
+    <swapLong>11.039999961853</swapLong>
+    <swapShort>-15</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>28.6646308898926</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>DKK</priceIn>
+    <rateToUSD>5.7329</rateToUSD>
+    <rateToEUR>7.4231</rateToEUR>
     <baseFileName>USDDKK</baseFileName>
   </instrument>
   <instrument>
@@ -1666,18 +1626,18 @@
     <comment>USDHKD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>12</spread>
+    <spread>7</spread>
     <swapType>Points</swapType>
-    <swapLong>174</swapLong>
-    <swapShort>-242</swapShort>
+    <swapLong>28.5599994659424</swapLong>
+    <swapShort>-28</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>38.752124786377</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>HKD</priceIn>
+    <rateToUSD>7.7504</rateToUSD>
+    <rateToEUR>10.0354</rateToEUR>
     <baseFileName>USDHKD</baseFileName>
   </instrument>
   <instrument>
@@ -1686,18 +1646,18 @@
     <comment>USDHUF</comment>
     <digits>3</digits>
     <contractSize>100000</contractSize>
-    <spread>152</spread>
+    <spread>187</spread>
     <swapType>Points</swapType>
-    <swapLong>302</swapLong>
-    <swapShort>-62</swapShort>
+    <swapLong>26.5</swapLong>
+    <swapShort>4</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>1207.03454589844</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>HUF</priceIn>
+    <rateToUSD>241.4069</rateToUSD>
+    <rateToEUR>312.5789</rateToEUR>
     <baseFileName>USDHUF</baseFileName>
   </instrument>
   <instrument>
@@ -1706,18 +1666,18 @@
     <comment>USDILS</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>526</spread>
+    <spread>330</spread>
     <swapType>Points</swapType>
-    <swapLong>115</swapLong>
-    <swapShort>-9</swapShort>
+    <swapLong>7.94000005722046</swapLong>
+    <swapShort>-3</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>17.9777145385742</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>ILS</priceIn>
+    <rateToUSD>3.5955</rateToUSD>
+    <rateToEUR>4.6556</rateToEUR>
     <baseFileName>USDILS</baseFileName>
   </instrument>
   <instrument>
@@ -1725,19 +1685,19 @@
     <instrumentType>Forex</instrumentType>
     <comment>USDJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>4</spread>
+    <contractSize>100000</contractSize>
+    <spread>2</spread>
     <swapType>Points</swapType>
-    <swapLong>34</swapLong>
-    <swapShort>-44</swapShort>
+    <swapLong>2.03999996185303</swapLong>
+    <swapShort>-3</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>525.631469726563</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
     <baseFileName>USDJPY</baseFileName>
   </instrument>
   <instrument>
@@ -1746,18 +1706,18 @@
     <comment>USDMXN</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>200</spread>
+    <spread>495</spread>
     <swapType>Points</swapType>
-    <swapLong>1934</swapLong>
-    <swapShort>550</swapShort>
+    <swapLong>192.839996337891</swapLong>
+    <swapShort>36</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>65.5012512207031</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>MXN</priceIn>
+    <rateToUSD>13.1003</rateToUSD>
+    <rateToEUR>16.9625</rateToEUR>
     <baseFileName>USDMXN</baseFileName>
   </instrument>
   <instrument>
@@ -1766,18 +1726,18 @@
     <comment>USDNOK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>145</spread>
+    <spread>305</spread>
     <swapType>Points</swapType>
-    <swapLong>454</swapLong>
-    <swapShort>78</swapShort>
+    <swapLong>41.8800010681152</swapLong>
+    <swapShort>1</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>31.2607498168945</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>NOK</priceIn>
+    <rateToUSD>6.2522</rateToUSD>
+    <rateToEUR>8.0954</rateToEUR>
     <baseFileName>USDNOK</baseFileName>
   </instrument>
   <instrument>
@@ -1786,18 +1746,18 @@
     <comment>USDPLN</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>134</spread>
+    <spread>158</spread>
     <swapType>Points</swapType>
-    <swapLong>342</swapLong>
-    <swapShort>79</swapShort>
+    <swapLong>34.439998626709</swapLong>
+    <swapShort>8</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>16.1507091522217</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>PLN</priceIn>
+    <rateToUSD>3.2301</rateToUSD>
+    <rateToEUR>4.1825</rateToEUR>
     <baseFileName>USDPLN</baseFileName>
   </instrument>
   <instrument>
@@ -1806,18 +1766,18 @@
     <comment>USDRUB</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>1793</spread>
+    <spread>1725</spread>
     <swapType>Points</swapType>
-    <swapLong>6384</swapLong>
-    <swapShort>3904</swapShort>
+    <swapLong>890.400024414063</swapLong>
+    <swapShort>542</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>184.96875</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>RUB</priceIn>
+    <rateToUSD>36.9938</rateToUSD>
+    <rateToEUR>47.9003</rateToEUR>
     <baseFileName>USDRUB</baseFileName>
   </instrument>
   <instrument>
@@ -1826,18 +1786,18 @@
     <comment>USDSEK</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>141</spread>
+    <spread>206</spread>
     <swapType>Points</swapType>
-    <swapLong>331</swapLong>
-    <swapShort>-16</swapShort>
+    <swapLong>17.6399993896484</swapLong>
+    <swapShort>-15</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>35.2575836181641</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SEK</priceIn>
+    <rateToUSD>7.0515</rateToUSD>
+    <rateToEUR>9.1305</rateToEUR>
     <baseFileName>USDSEK</baseFileName>
   </instrument>
   <instrument>
@@ -1846,18 +1806,18 @@
     <comment>USDSGD</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>11</spread>
+    <spread>6</spread>
     <swapType>Points</swapType>
-    <swapLong>56</swapLong>
-    <swapShort>-60</swapShort>
+    <swapLong>4.19999980926514</swapLong>
+    <swapShort>-3</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>6.27183485031128</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>SGD</priceIn>
+    <rateToUSD>1.2544</rateToUSD>
+    <rateToEUR>1.6242</rateToEUR>
     <baseFileName>USDSGD</baseFileName>
   </instrument>
   <instrument>
@@ -1866,18 +1826,18 @@
     <comment>USDTRY</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>43</spread>
+    <spread>95</spread>
     <swapType>Points</swapType>
-    <swapLong>1171</swapLong>
-    <swapShort>340</swapShort>
+    <swapLong>87.7200012207031</swapLong>
+    <swapShort>20</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>10.8049449920654</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>TRY</priceIn>
+    <rateToUSD>2.1610</rateToUSD>
+    <rateToEUR>2.7981</rateToEUR>
     <baseFileName>USDTRY</baseFileName>
   </instrument>
   <instrument>
@@ -1886,18 +1846,18 @@
     <comment>USDZAR</comment>
     <digits>5</digits>
     <contractSize>100000</contractSize>
-    <spread>339</spread>
+    <spread>729</spread>
     <swapType>Points</swapType>
-    <swapLong>2344</swapLong>
-    <swapShort>862</swapShort>
+    <swapLong>272.649993896484</swapLong>
+    <swapShort>93</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>5</commission>
+    <commission>53.4782981872559</commission>
     <slippage>0</slippage>
-    <priceIn>USD</priceIn>
-    <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
+    <priceIn>ZAR</priceIn>
+    <rateToUSD>10.6957</rateToUSD>
+    <rateToEUR>13.8490</rateToEUR>
     <baseFileName>USDZAR</baseFileName>
   </instrument>
   <instrument>
@@ -1905,19 +1865,59 @@
     <instrumentType>Forex</instrumentType>
     <comment>ZARJPY</comment>
     <digits>3</digits>
-    <contractSize>1000</contractSize>
-    <spread>13</spread>
+    <contractSize>100000</contractSize>
+    <spread>14</spread>
     <swapType>Points</swapType>
-    <swapLong>24</swapLong>
-    <swapShort>-58</swapShort>
+    <swapLong>0.720000028610229</swapLong>
+    <swapShort>-4</swapShort>
     <commissionType>Money</commissionType>
     <commissionScope>lot</commissionScope>
     <commissionTime>open</commissionTime>
-    <commission>0.471355706453323</commission>
+    <commission>49.1443710327148</commission>
+    <slippage>0</slippage>
+    <priceIn>JPY</priceIn>
+    <rateToUSD>105.1263</rateToUSD>
+    <rateToEUR>136.1198</rateToEUR>
+    <baseFileName>ZARJPY</baseFileName>
+  </instrument>
+  <instrument>
+    <symbol>XAGUSD</symbol>
+    <instrumentType>Forex</instrumentType>
+    <comment>XAGUSD</comment>
+    <digits>3</digits>
+    <contractSize>5000</contractSize>
+    <spread>15</spread>
+    <swapType>Points</swapType>
+    <swapLong>0.620000004768372</swapLong>
+    <swapShort>0</swapShort>
+    <commissionType>Money</commissionType>
+    <commissionScope>lot</commissionScope>
+    <commissionTime>open</commissionTime>
+    <commission>4.78443098068237</commission>
     <slippage>0</slippage>
     <priceIn>USD</priceIn>
     <rateToUSD>1.0000</rateToUSD>
-    <rateToEUR>1.0000</rateToEUR>
-    <baseFileName>ZARJPY</baseFileName>
+    <rateToEUR>1.2948</rateToEUR>
+    <baseFileName>XAGUSD</baseFileName>
+  </instrument>
+  <instrument>
+    <symbol>XAUUSD</symbol>
+    <instrumentType>Forex</instrumentType>
+    <comment>XAUUSD</comment>
+    <digits>3</digits>
+    <contractSize>100</contractSize>
+    <spread>195</spread>
+    <swapType>Points</swapType>
+    <swapLong>0.949999988079071</swapLong>
+    <swapShort>-1</swapShort>
+    <commissionType>Money</commissionType>
+    <commissionScope>lot</commissionScope>
+    <commissionTime>open</commissionTime>
+    <commission>6.34324550628662</commission>
+    <slippage>0</slippage>
+    <priceIn>USD</priceIn>
+    <rateToUSD>1.0000</rateToUSD>
+    <rateToEUR>1.2948</rateToEUR>
+    <baseFileName>XAUUSD</baseFileName>
   </instrument>
 </fsb>

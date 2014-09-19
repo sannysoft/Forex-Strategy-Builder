@@ -294,8 +294,18 @@ namespace ForexStrategyBuilder.Dialogs.Optimizer
                 double max = aParameter[param].Maximum;
                 double step = aParameter[param].Step;
 
-                anudParameterMin[param].Value = (decimal) Math.Round(Math.Max(value - deltaStep*step, min), point);
-                anudParameterMax[param].Value = (decimal) Math.Round(Math.Min(value + deltaStep*step, max), point);
+                int deltaStepInner = deltaStep;
+
+                if (aParameter[param].GroupName == "HourOfDay")
+                {
+                    anudParameterMin[param].Value = 0;
+                    anudParameterMax[param].Value = 23;
+                }
+                else
+                {
+                    anudParameterMin[param].Value = (decimal)Math.Round(Math.Max(value - deltaStep * step, min), point);
+                    anudParameterMax[param].Value = (decimal)Math.Round(Math.Min(value + deltaStep * step, max), point);
+                }
                 alblParameterValue[param].Text = GetParameterText(param);
             }
         }

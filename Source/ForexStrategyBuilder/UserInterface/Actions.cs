@@ -53,7 +53,7 @@ namespace ForexStrategyBuilder
             bool changeMarket = ReadCommandLineOptions(out p, out symbol);
 
             PrepareInstruments();
-            LoadCustomIndicators();
+            LoadCustomIndicators();            
 
             if (!Data.AutostartGenerator)
             {
@@ -80,7 +80,7 @@ namespace ForexStrategyBuilder
                     }
                 }
                 else
-                    Application.Exit(); //TODO: Crashes the app - need to fix
+                    throw new ArgumentException("Wrong currency!");
 
             if (Data.AutostartGenerator)
                 ShowGenerator();
@@ -93,11 +93,26 @@ namespace ForexStrategyBuilder
                     SetMarket(Data.Strategy.Symbol, Data.Strategy.DataPeriod);
                     if (LoadInstrument(false) == 0)
                     {
+                        //Add hour of day filter
+                        Indicator indicator = IndicatorManager.ConstructIndicator("HourOfDay");
+                        indicator.Initialize(SlotTypes.OpenFilter);
+
+                        int slot = Data.Strategy.AddOpenFilter();
+                        IndicatorSlot indSlot = Data.Strategy.Slot[slot];
+                        indSlot.IndicatorName = indicator.IndicatorName;
+                        indSlot.IndParam = indicator.IndParam;
+                        indSlot.Component = indicator.Component;
+                        indSlot.SeparatedChart = indicator.SeparatedChart;
+                        indSlot.SpecValue = indicator.SpecialValues;
+                        indSlot.MinValue = indicator.SeparatedChartMinValue;
+                        indSlot.MaxValue = indicator.SeparatedChartMaxValue;
+                        indSlot.IsDefined = true;
+
+                        //Calculate and run optimizer
                         Calculate(true);
                         PrepareScannerCompactMode();
                         ShowOptimizer();
                     }
-
                 }
             }
         }
@@ -195,7 +210,14 @@ namespace ForexStrategyBuilder
             Data.InitMarketStatistic();
             Data.InstrProperties = Instruments.InstrumentList[Data.Strategy.Symbol].Clone();
 
-            Application.Run(new Actions());
+            try
+            {
+                Application.Run(new Actions());
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void PrepareInstruments()

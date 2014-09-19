@@ -498,6 +498,7 @@ namespace ForexStrategyBuilder.Dialogs.Generator
             currentBenchmarkTime = totalWorkTime;
 
             bool isStopGenerating = false;
+            int run = 0;
             do
             {
                 // The generating cycle
@@ -526,27 +527,33 @@ namespace ForexStrategyBuilder.Dialogs.Generator
 
                     // Calculates the back test.
                     bool isBetter = CalculateTheResult(false);
+                    run++;
 
                     // Try to change lits
                     if (Backtester.NetMoneyBalance > 0 && Data.AutoMM)
                     {
                         bool isGood = false;
                         Strategy beforeOptimization = Data.Strategy.Clone();
-                        for (double i = 0.5; i <= 10; i += 0.5)
+                        for (double i = 0.5; i <= 10; i += 1)
                         {
                             //Try different MM
                             Data.Strategy.EntryLots = i;
-                            isGood = CalculateTheResult(false) || isGood;
-                            isBetter = isBetter && isGood;
+                            isGood = CalculateTheResult(false);
+                            if (isGood)
+                                beforeOptimization = Data.Strategy.Clone(); else
+                                Data.Strategy = beforeOptimization.Clone();                            
                         }
-
-                        if (!isGood)
-                            Data.Strategy = beforeOptimization.Clone();
                     }
 
                     // Initial Optimization
                     if (chbInitialOptimization.Checked)
                         PerformInitialOptimization(worker, isBetter);
+
+                    if (run >= 1000)
+                    {
+                        RestoreFromBest();
+                        run = 0;
+                    }
 
                     totalWorkTime = currentBenchmarkTime.Add(DateTime.Now - startTime);
                     benchmark = 0.0001*Data.Bars*totalCalculations/totalWorkTime.TotalSeconds;
@@ -949,7 +956,7 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                 if (usePermSL && changePermSL)
                 {
                     int multiplier = Data.InstrProperties.IsFiveDigits ? 50 : 5;
-                    Data.Strategy.PermanentSL = multiplier*random.Next(5, 500);
+                    Data.Strategy.PermanentSL = Math.Min(5000, multiplier*random.Next(5, 500));
                     //if (random.Next(100) > 80 &&
                     //    (Data.Strategy.SameSignalAction == SameDirSignalAction.Add   || 
                     //    Data.Strategy.SameSignalAction == SameDirSignalAction.Winner ||
@@ -1055,7 +1062,8 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                 Language.T("Geometric Holding Period Ret."),
                 Language.T("Profit Factor"),
                 Language.T("Sharpe Ratio"),
-                Language.T("Win/Loss Ratio")
+                Language.T("Win/Loss Ratio"),
+                "Custom Sanny PP"
             };
 
             // External Simple Sorting Options
@@ -1096,6 +1104,11 @@ namespace ForexStrategyBuilder.Dialogs.Generator
                     break;
                 case "Win/Loss Ratio":
                     value = (float) Backtester.WinLossRatio;
+                    break;
+                case "Custom Sanny PP":
+                    double drawdown = Backtester.MoneyEquityPercentDrawdown < 2 ? 2 : Backtester.MoneyEquityPercentDrawdown;
+                    //double dd = drawdown;
+                    value = (float) ((Backtester.NetMoneyBalance - Configs.InitialAccount) / drawdown);
                     break;
                 default:
                     // External Simple Sorting Options
