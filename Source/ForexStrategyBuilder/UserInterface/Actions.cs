@@ -93,20 +93,31 @@ namespace ForexStrategyBuilder
                     SetMarket(Data.Strategy.Symbol, Data.Strategy.DataPeriod);
                     if (LoadInstrument(false) == 0)
                     {
-                        //Add hour of day filter
-                        Indicator indicator = IndicatorManager.ConstructIndicator("HourOfDay");
-                        indicator.Initialize(SlotTypes.OpenFilter);
+                        //Check if we already have hours filter
+                        bool hasHoursFilter = false;
+                        for (int i=0; i<Data.Strategy.Slots && !hasHoursFilter; i++)
+                            if (Data.Strategy.Slot[i].SlotType.Equals(SlotTypes.OpenFilter) && Data.Strategy.Slot[i].IndicatorName == "HourOfDay")
+                            {
+                                hasHoursFilter = true;                                
+                            }
 
-                        int slot = Data.Strategy.AddOpenFilter();
-                        IndicatorSlot indSlot = Data.Strategy.Slot[slot];
-                        indSlot.IndicatorName = indicator.IndicatorName;
-                        indSlot.IndParam = indicator.IndParam;
-                        indSlot.Component = indicator.Component;
-                        indSlot.SeparatedChart = indicator.SeparatedChart;
-                        indSlot.SpecValue = indicator.SpecialValues;
-                        indSlot.MinValue = indicator.SeparatedChartMinValue;
-                        indSlot.MaxValue = indicator.SeparatedChartMaxValue;
-                        indSlot.IsDefined = true;
+                        if (!hasHoursFilter) {
+                            //Add hour of day filter
+                            Indicator indicator = IndicatorManager.ConstructIndicator("HourOfDay");
+                            indicator.Initialize(SlotTypes.OpenFilter);
+
+                            int slot = Data.Strategy.AddOpenFilter();
+                            IndicatorSlot indSlot = Data.Strategy.Slot[slot];
+                            indSlot.IndicatorName = indicator.IndicatorName;
+                            indSlot.IndParam = indicator.IndParam;
+                            indSlot.Component = indicator.Component;
+                            indSlot.SeparatedChart = indicator.SeparatedChart;
+                            indSlot.SpecValue = indicator.SpecialValues;
+                            indSlot.MinValue = indicator.SeparatedChartMinValue;
+                            indSlot.MaxValue = indicator.SeparatedChartMaxValue;
+                            indSlot.LogicalGroup = Data.Strategy.GetDefaultGroup(slot);
+                            indSlot.IsDefined = true;
+                        }
 
                         //Calculate and run optimizer
                         Calculate(true);

@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForexStrategyBuilder", "ForexStrategyBuilder\ForexStrategyBuilder.csproj", "{490A7A3C-E194-499E-9A47-2E29290618EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAnalytics", "ForexStrategyBuilder.CustomAnalytics\CustomAnalytics.csproj", "{9353190E-DA92-43F5-B8EC-4A23A6592716}"
@@ -50,10 +52,10 @@ Global
 		{EC98CFCA-53A9-4589-8632-7A3AE8082E2F}.Release|x86.ActiveCfg = Release|x86
 		{EC98CFCA-53A9-4589-8632-7A3AE8082E2F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ForexStrategyBuilder\ForexStrategyBuilder.csproj
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ForexStrategyBuilder\ForexStrategyBuilder.csproj
 	EndGlobalSection
 EndGlobal

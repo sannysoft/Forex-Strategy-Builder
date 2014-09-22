@@ -299,7 +299,7 @@ namespace ForexStrategyBuilder.Dialogs.Optimizer
                 if (aParameter[param].GroupName == "HourOfDay")
                 {
                     anudParameterMin[param].Value = 0;
-                    anudParameterMax[param].Value = 23;
+                    anudParameterMax[param].Value = aParameter[param].ParameterName.Contains("minute") ? 0 : 23;
                 }
                 else
                 {
